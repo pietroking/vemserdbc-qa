@@ -1,0 +1,18 @@
+
+_
+java:S1659"IDeclare "votosBrancos" and all following declarations on a separate line.(ÜÏğË
+^
+java:S1659"HDeclare "percentNulo" and all following declarations on a separate line.(£»¢ü
+S	java:S106	"9Replace this use of System.out or System.err by a logger.(˜ğãûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(²Å ²üÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÿŠÊğúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ğñ…¿øÿÿÿÿ
+n
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(Ğ„ú¼8Ï¢ğ°¸0
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ğ„ú¼
+n
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(ë¤³ó8Ñ¢ğ°¸0
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ë¤³ó
+s
+java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(â€å¿ûÿÿÿÿ8Ò¢ğ°¸0
+S	java:S106"9Replace this use of System.out or System.err by a logger.(â€å¿ûÿÿÿÿ
