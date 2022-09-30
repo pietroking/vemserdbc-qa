@@ -1,8 +1,5 @@
-import java.util.Scanner;
-
 public class Exercicio7 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
         double[][] mercados = {
                 {10.9,10.8,10.9},
@@ -17,20 +14,19 @@ public class Exercicio7 {
                 {17,10,11}
     };
         double[] totalmercado = {0,0,0};
+        double menor = 10000000;
+        int aux = 0;
 
         for (int j=0;j<3;j++){
             for (int i=0;i<10;i++){
                 totalmercado[j] += mercados[i][j];
             }
-        }
-        double menor = totalmercado[0];
-        int aux = 0;
-        for (int j=0;j<3;j++){
-            if (menor>totalmercado[j]){
+            if (menor > totalmercado[j]){
                 menor = totalmercado[j];
                 aux = j;
             }
         }
+
         System.out.println("O preço no mercado "+(++aux)+" é o mais barato e é de R$ "+menor);
     }
 }
