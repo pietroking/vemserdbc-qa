@@ -13,7 +13,7 @@ public class Exercicio7 {
         quantidade = sc.nextInt();
         sc.nextLine();
 
-        switch(codigo) {
+        switch(codigo.toUpperCase()) {
             case "ABCD" -> {
                 //System.out.println("O preço total é: R$" + (quantidade*5.30));
                 System.out.printf("O preço total é: R$ %.2f\n", (quantidade*5.30));

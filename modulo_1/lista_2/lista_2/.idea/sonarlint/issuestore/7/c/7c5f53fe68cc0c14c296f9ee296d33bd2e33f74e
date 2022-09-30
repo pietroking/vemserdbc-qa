@@ -1,0 +1,17 @@
+
+N
+java:S1854"8Remove this useless assignment to local variable "nome".(ûš›“
+8
+java:S1659""Declare "cont" on a separate line.(À áƒ
+X
+java:S1659	"CDeclare "altura" and all following declarations on a separate line.(ÖæÒ/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(™ØÏ„şÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÃÜõÌ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(®ª‹¤
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¿ÛüÀûÿÿÿÿ
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(™ØÏ„şÿÿÿÿ
+N	java:S106#"9Replace this use of System.out or System.err by a logger.(İâôæ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(‰ÇŒşşÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(”Œ‰ıÿÿÿÿ
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(ü’’»
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(×Õ¾ó
