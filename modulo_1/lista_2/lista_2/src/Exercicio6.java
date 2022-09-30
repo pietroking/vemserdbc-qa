@@ -20,7 +20,7 @@ public class Exercicio6 {
         }
         for (int j=0;j<5;j++){
             mediaAluno += mediaDisciplinas[j];
-            System.out.println("Media da disciplina: "+(mediaDisciplinas[j]/4));
+            System.out.println("Media da disciplina "+(j+1)+" : "+(mediaDisciplinas[j]/4));
         }
         System.out.println("Media geral do aluno: "+(mediaAluno/20));
     }

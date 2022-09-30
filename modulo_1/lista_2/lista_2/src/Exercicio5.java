@@ -15,11 +15,11 @@ public class Exercicio5 {
 //
 
         for (int i=0;i<5;i++){
-                System.out.println("Digite o numero de matricula do aluno:");
+                System.out.println("Digite o numero de matricula do aluno "+(i+1)+":");
                 classe[i][0]=sc.nextDouble();
-                System.out.println("Digite a média das provas do aluno:");
+                System.out.println("Digite a média das provas do aluno "+(i+1)+":");
                 classe[i][1]=sc.nextDouble();
-                System.out.println("Digite a média dos trabalhos do aluno:");
+                System.out.println("Digite a média dos trabalhos do aluno "+(i+1)+":");
                 classe[i][2]=sc.nextDouble();
                 classe[i][3]=(classe[i][1]*0.6)+(classe[i][2]*0.4);
                 mediaNotasFinais+=classe[i][3];
