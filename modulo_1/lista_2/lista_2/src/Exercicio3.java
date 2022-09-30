@@ -32,10 +32,10 @@ public class Exercicio3 {
             System.out.println("Digite o nome do jogador:");
             nome=sc.nextLine();
         }while(!nome.equals("SAIR"));
-        System.out.println("Quantidade de jogadores: "+cont);
-        System.out.println("Altura do maior jogadores: "+maior);
-        System.out.println("Jogador mais velho: "+velho);
-        System.out.println("Jogador mais pesado: "+pesado);
-        System.out.println("Média das alturas: "+(mediaAltura/cont));
+        System.out.println("Quantidade de jogadores: "+cont+
+            "\nAltura do maior jogadores: "+maior+
+            "\nJogador mais velho: "+velho+
+            "\nJogador mais pesado: "+pesado+
+            "\nMédia das alturas: "+(mediaAltura/cont));
     }
 }

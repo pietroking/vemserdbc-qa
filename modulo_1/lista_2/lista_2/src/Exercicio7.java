@@ -11,7 +11,7 @@ public class Exercicio7 {
                 {8.6,8,7.9},
                 {5.6,4.8,4.9},
                 {6,5.8,5.9},
-                {4.2,3.8,3.9},
+                {4.2,12,3.9},
                 {9,9,9},
                 {12,15,14},
                 {17,10,11}
@@ -24,11 +24,13 @@ public class Exercicio7 {
             }
         }
         double menor = totalmercado[0];
+        int aux = 0;
         for (int j=0;j<3;j++){
             if (menor>totalmercado[j]){
                 menor = totalmercado[j];
+                aux = j;
             }
         }
-        System.out.println("O preço no mercado mais barato é de R$ "+menor);
+        System.out.println("O preço no mercado "+(++aux)+" é o mais barato e é de R$ "+menor);
     }
 }
