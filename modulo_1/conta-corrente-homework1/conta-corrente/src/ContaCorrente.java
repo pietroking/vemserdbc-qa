@@ -30,9 +30,12 @@ public class ContaCorrente {
         }
         if ((valor>0) && (this.retornarSaldoComChequeEspecial()-valor>=0)){
             this.saldo-=valor;
+            System.out.println("Saque: R$ "+valor);
+            this.imprimirContaCorrente();
             return true;
         }else{
             System.out.println("Voce não possui saldo na sua conta para esta retirada.");
+            this.imprimirContaCorrente();
             return false;
         }
     }
@@ -40,6 +43,8 @@ public class ContaCorrente {
     public boolean depositar(double valor){
         if (valor>0){
             this.saldo+=valor;
+            System.out.println("Depósito: R$ "+valor);
+            this.imprimirContaCorrente();
             return true;
         }else {
         System.out.println("Este valor não pode ser depositado.");
@@ -54,8 +59,6 @@ public class ContaCorrente {
     public boolean transferir(ContaCorrente conta, double valor){
         if (this.sacar(valor)){
             conta.depositar(valor);
-            this.imprimirContaCorrente();
-            conta.imprimirContaCorrente();
             return true;
         }else {
             System.out.println("A tranferencia não pode ser completada.");

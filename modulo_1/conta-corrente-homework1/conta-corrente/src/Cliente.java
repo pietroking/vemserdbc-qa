@@ -12,7 +12,6 @@ public class Cliente {
         this.enderecos = enderecos;
     }
 
-
     public void imprimirContatos() {
         for (int i=0;i<contatos.length;i++){
             this.contatos[i].imprimirContato();
