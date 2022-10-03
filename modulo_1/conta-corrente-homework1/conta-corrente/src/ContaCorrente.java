@@ -56,11 +56,11 @@ public class ContaCorrente {
         return (this.saldo+this.chequeEspecial);
     }
 
-    public boolean transferir(ContaCorrente conta, double valor){
-        if (this.sacar(valor)){
+    public boolean transferir(ContaCorrente conta, double valor) {
+        if (this.sacar(valor)) {
             conta.depositar(valor);
             return true;
-        }else {
+        } else {
             System.out.println("A tranferencia não pode ser completada.");
             return false;
         }
