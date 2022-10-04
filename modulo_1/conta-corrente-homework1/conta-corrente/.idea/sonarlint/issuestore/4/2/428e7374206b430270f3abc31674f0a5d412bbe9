@@ -1,0 +1,19 @@
+
+i
+java:S1104"SMake cliente a static final constant or non-public and provide accessors if needed.(»Œ¼
+r
+java:S1104"WMake numeroConta a static final constant or non-public and provide accessors if needed.(Ñé‡Ëüÿÿÿÿ
+n
+java:S1104"SMake agencia a static final constant or non-public and provide accessors if needed.(É¯ãªıÿÿÿÿ
+g
+java:S1104"QMake saldo a static final constant or non-public and provide accessors if needed.(«•Æ€
+p
+java:S1104"ZMake chequeEspecial a static final constant or non-public and provide accessors if needed.(›ÊŒ¨
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¡’êáıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(òÔÇÍ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ô¦Éüÿÿÿÿ
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(üêÊ¯
+M	java:S106%"9Replace this use of System.out or System.err by a logger.(õ•„w
+S	java:S106."9Replace this use of System.out or System.err by a logger.(à¸ìªøÿÿÿÿ
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(áİı
+U	java:S106@"9Replace this use of System.out or System.err by a logger.(µäæ8à±šö¹0
