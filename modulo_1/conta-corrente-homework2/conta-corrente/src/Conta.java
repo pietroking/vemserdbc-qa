@@ -92,7 +92,7 @@ public abstract class Conta implements Movimentacao {
     }
 
     @Override
-    public boolean transferir(ContaCorrente conta, double valor) {
+    public boolean transferir(Conta conta, double valor) {
         if (this.sacar(valor)) {
             conta.depositar(valor);
             return true;

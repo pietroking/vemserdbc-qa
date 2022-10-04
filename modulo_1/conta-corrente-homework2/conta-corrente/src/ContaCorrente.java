@@ -11,15 +11,6 @@ public class ContaCorrente extends Conta implements Impressao{
         this.chequeEspecial = chequeEspecial;
     }
 
-//    public void imprimirContaCorrente(){
-//        System.out.println("Cliente: "+this.getCliente().getNome()+
-//                           "\nConta: "+this.getNumeroConta()+
-//                           "\nAgencia: "+this.getAgencia()+
-//                           "\nSaldo: R$ "+this.getSaldo()+
-//                           "\nCheque Especial: R$ "+this.chequeEspecial);
-//        System.out.println("--------------------------------");
-//    }
-
     public boolean sacar(double valor){
         if (valor<0){
             System.out.println("Voce não pode faze retirada de um valor negativo.");
@@ -38,35 +29,9 @@ public class ContaCorrente extends Conta implements Impressao{
         }
     }
 
-//    public boolean depositar(double valor){
-//        if (valor>0){
-//            this.setSaldo(getSaldo()+valor);
-//            System.out.println("Depósito: R$ "+valor);
-//            this.imprimirContaCorrente();
-//            return true;
-//        }else {
-//        System.out.println("Este valor não pode ser depositado.");
-//            return false;
-//        }
-//    }
-
     public double retornarSaldoComChequeEspecial(){
         return (this.getSaldo()+this.chequeEspecial);
     }
-
-//    public boolean transferir(ContaCorrente conta, double valor) {
-//        if (this.sacar(valor)) {
-//            conta.depositar(valor);
-//            return true;
-//        } else {
-//            System.out.println("A tranferencia não pode ser completada.");
-//            return false;
-//        }
-//    }
-
-//    public double getChequeEspecial() {
-//        return chequeEspecial;
-//    }
 
     public void setChequeEspecial(double chequeEspecial) {
         this.chequeEspecial = chequeEspecial;

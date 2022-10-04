@@ -33,7 +33,7 @@ public class Main {
         contaPietro.depositar(1600.96);
         contaPietro.sacar(378.24);
 ////        contaPietro.imprimirContaCorrente();
-        contaPietro.transferir(contaMae,7000);
+//        contaPietro.transferir(contaMae,7000);
 ////        contaPietro.transferir(contaPietro,7000);
         contaPietro.sacar(-378.24);
         contaPietro.depositar(-1600.96);
@@ -42,6 +42,8 @@ public class Main {
         poupancaPietro.sacar(329);
         poupancaPietro.transferir(contaPietro,8000);
         poupancaPietro.transferir(contaPietro,3000);
+        contaPietro.transferir(poupancaPietro,11000);
+        poupancaPietro.imprimir();
 
     }
 }

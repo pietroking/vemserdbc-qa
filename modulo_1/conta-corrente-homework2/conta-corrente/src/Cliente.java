@@ -13,13 +13,6 @@ public class Cliente {
         this.enderecos[0] = endereco1;
         this.enderecos[1] = endereco2;
     }
-//    public Cliente(String nome, String cpf, Contato contato[], Endereco endereco[]){
-//        this.nome = nome;
-//        this.cpf = cpf;
-//        this.contatos = contato;
-//        this.enderecos = endereco;
-//    }
-//    Cliente pietro = new Cliente("Pietro","005.667.830-45",new Contato(){dbc, socio},new Endereco(){trabalho, casa});
 
     public void imprimirContatos() {
         for (int i=0;i<getContatos().length;i++){
