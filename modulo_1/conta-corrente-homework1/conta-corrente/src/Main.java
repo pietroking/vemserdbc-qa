@@ -8,7 +8,7 @@ public class Main {
         Endereco casa = new Endereco(1,"Vicente",2512,"3","90420-000","Porto Alegre","RS","Brasil");
 
         Cliente pietro = new Cliente("Pietro","005.667.830-45", dbc, socio, trabalho, casa);
-        Cliente mae = new Cliente("Mae","000.000.000-22", socio, null, casa, null);
+        Cliente mae = new Cliente("Mae","000.000.000-22", null, socio, null, null);
 
 
         ContaCorrente contaPietro = new ContaCorrente(pietro,"000001",0040,5000,1000);

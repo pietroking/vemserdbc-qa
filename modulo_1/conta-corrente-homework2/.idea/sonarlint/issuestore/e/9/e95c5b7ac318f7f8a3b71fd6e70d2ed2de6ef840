@@ -1,0 +1,17 @@
+
+U
+java:S1161":Add the "@Override" annotation above this method signature(½õ “ùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ô¦Éüÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(üêÊ¯
+N	java:S106"9Replace this use of System.out or System.err by a logger.(üêÊ¯
+M	java:S106"9Replace this use of System.out or System.err by a logger.(õ•„w
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(îœÇÉıÿÿÿÿ
+U	java:S106/"9Replace this use of System.out or System.err by a logger.(òÔÇÍ8ÀÄ¾„º0
+H
+java:S1068"+Remove this unused "cliente" private field.(Ó…ß®8”÷Ïƒº0
+Q
+java:S1068"/Remove this unused "numeroConta" private field.(¿£ºãÿÿÿÿÿ8”÷Ïƒº0
+G
+java:S1068"+Remove this unused "agencia" private field.(îÎU8”÷Ïƒº0
+K
+java:S1068")Remove this unused "saldo" private field.(×Ì’êüÿÿÿÿ8¡™Ğƒº0

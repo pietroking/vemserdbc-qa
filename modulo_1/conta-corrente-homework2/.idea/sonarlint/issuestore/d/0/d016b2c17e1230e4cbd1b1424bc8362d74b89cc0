@@ -1,0 +1,32 @@
+
+k
+java:S1192:"IDefine a constant instead of duplicating this literal "
+Conta: " 3 times.(ÓÕ‘øÿÿÿÿ8Äà¸„º0
+~
+java:S1192="aDefine a constant instead of duplicating this literal "--------------------------------" 3 times.(òÔÇÍ8Éà¸„º0
+l
+java:S11929"JDefine a constant instead of duplicating this literal "Cliente: " 3 times.(îœÇÉıÿÿÿÿ8Éà¸„º0
+h
+java:S1192<"LDefine a constant instead of duplicating this literal "
+Saldo: R$ " 3 times.(ô©Ç\8Éà¸„º0
+m
+java:S1192;"KDefine a constant instead of duplicating this literal "
+Agencia: " 3 times.(¡ÿØØøÿÿÿÿ8Êà¸„º0
+T
+java:S5993"9Change the visibility of this constructor to "protected".(•Ü›şÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(ô¦Éüÿÿÿÿ
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(üêÊ¯
+S	java:S1069"9Replace this use of System.out or System.err by a logger.(îœÇÉıÿÿÿÿ
+V	java:S1258"<This block of commented-out lines of code should be removed.(²·¡Ûøÿÿÿÿ
+N	java:S106="9Replace this use of System.out or System.err by a logger.(òÔÇÍ
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(üêÊ¯
+M	java:S106A"9Replace this use of System.out or System.err by a logger.(õ•„w
+Z	java:S106C"9Replace this use of System.out or System.err by a logger.(îœÇÉıÿÿÿÿ8 ¶„º0
+V	java:S125B"<This block of commented-out lines of code should be removed.(²·¡Ûøÿÿÿÿ
+U	java:S106G"9Replace this use of System.out or System.err by a logger.(òÔÇÍ8ƒ ¶„º0
+Z	java:S106P"9Replace this use of System.out or System.err by a logger.(à¸ìªøÿÿÿÿ8ô×·„º0
+Z	java:S106R"9Replace this use of System.out or System.err by a logger.(îœÇÉıÿÿÿÿ8õ×·„º0
+V	java:S125Q"<This block of commented-out lines of code should be removed.(²·¡Ûøÿÿÿÿ
+U	java:S106V"9Replace this use of System.out or System.err by a logger.(òÔÇÍ8Œá¸„º0
+U	java:S106Y"9Replace this use of System.out or System.err by a logger.(áİı8á¸„º0
+U	java:S106d"9Replace this use of System.out or System.err by a logger.(µäæ8¬²¿„º0

@@ -15,17 +15,21 @@ public class Cliente {
     }
 
     public void imprimirContatos() {
-        for (int i=0;i<contatos.length;i++){
-            if (contatos[i] != null){
-                this.contatos[i].imprimirContato();
+        if (contatos!=null) {
+            for (int i = 0; i < contatos.length; i++) {
+                if (contatos[i] != null) {
+                    this.contatos[i].imprimirContato();
+                }
             }
         }
     }
 
     public void imprimirEnderecos() {
-        for (int i=0;i<enderecos.length;i++) {
-            if (enderecos[i] != null) {
-                this.enderecos[i].imprimirEndereco();
+        if (contatos!=null) {
+            for (int i = 0; i < enderecos.length; i++) {
+                if (enderecos[i] != null) {
+                    this.enderecos[i].imprimirEndereco();
+                }
             }
         }
     }
