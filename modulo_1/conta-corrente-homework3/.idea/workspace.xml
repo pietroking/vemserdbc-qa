@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fe7f23f2-8cb7-431c-bd3d-dc8a9f292fae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/sonarlint/issuestore/0/b/0b27f5a1297b56b2387bc4dfe1169c996269963a" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/.idea/sonarlint/issuestore/0/b/0b27f5a1297b56b2387bc4dfe1169c996269963a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/sonarlint/issuestore/2/f/2ffe945ec609e76ae7006523890b60d2cf57005e" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/.idea/sonarlint/issuestore/2/f/2ffe945ec609e76ae7006523890b60d2cf57005e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/sonarlint/issuestore/4/2/428e7374206b430270f3abc31674f0a5d412bbe9" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/.idea/sonarlint/issuestore/4/2/428e7374206b430270f3abc31674f0a5d412bbe9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/sonarlint/issuestore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/.idea/sonarlint/issuestore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/out/production/untitled/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/out/production/untitled/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/out/production/untitled/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/out/production/untitled/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../teste/.idea/sonarlint/issuestore/a/8/a8602fc6881b6620c313bd8ed4e26ade25b6298b" beforeDir="false" afterPath="$PROJECT_DIR$/../../teste/.idea/sonarlint/issuestore/a/8/a8602fc6881b6620c313bd8ed4e26ade25b6298b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../teste/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../teste/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../teste/out/production/teste/ExercicioLista.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../teste/out/production/teste/ExercicioLista.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../teste/src/ExercicioLista.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../teste/src/ExercicioLista.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2FjSVr0WKUghDBRKfLBsDsm3N6r" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "E:/Área de Trabalho/DBC/Git/vemserdbc-qa/modulo_1/conta-corrente-homework3"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe7f23f2-8cb7-431c-bd3d-dc8a9f292fae" name="Changes" comment="" />
+      <created>1665004026315</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665004026315</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

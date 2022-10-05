@@ -1,17 +1,17 @@
 
-d
-java:S1192;"IDefine a constant instead of duplicating this literal "
-Conta: " 3 times.(ÓÕ‘øÿÿÿÿ
 w
 java:S11923"aDefine a constant instead of duplicating this literal "--------------------------------" 6 times.(òÔÇÍ
-e
-java:S1192:"JDefine a constant instead of duplicating this literal "Cliente: " 3 times.(îœÇÉıÿÿÿÿ
 a
 java:S1192="LDefine a constant instead of duplicating this literal "
 Saldo: R$ " 3 times.(ô©Ç\
 f
 java:S1192<"KDefine a constant instead of duplicating this literal "
 Agencia: " 3 times.(¡ÿØØøÿÿÿÿ
+d
+java:S1192;"IDefine a constant instead of duplicating this literal "
+Conta: " 3 times.(ÓÕ‘øÿÿÿÿ
+e
+java:S1192:"JDefine a constant instead of duplicating this literal "Cliente: " 3 times.(îœÇÉıÿÿÿÿ
 T
 java:S5993"9Change the visibility of this constructor to "protected".(•Ü›şÿÿÿÿ
 S	java:S1062"9Replace this use of System.out or System.err by a logger.(ô¦Éüÿÿÿÿ
