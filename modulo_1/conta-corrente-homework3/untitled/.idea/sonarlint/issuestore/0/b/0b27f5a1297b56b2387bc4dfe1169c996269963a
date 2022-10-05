@@ -1,0 +1,22 @@
+
+a
+java:S1192"KDefine a constant instead of duplicating this literal "Saque: R$ " 3 times.(üêÊ¯
+~
+java:S1192"aDefine a constant instead of duplicating this literal "--------------------------------" 5 times.(òÔÇÍ8àÖ ¯º0
+S	java:S106"9Replace this use of System.out or System.err by a logger.(îœÇÉıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(òÔÇÍ
+U
+java:S1161":Add the "@Override" annotation above this method signature(½õ “ùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ô¦Éüÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(òÔÇÍ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(üêÊ¯
+N	java:S106"9Replace this use of System.out or System.err by a logger.(üêÊ¯
+M	java:S106"9Replace this use of System.out or System.err by a logger.(õ•„w
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(òÔÇÍ
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(ô¦Éüÿÿÿÿ
+N	java:S106."9Replace this use of System.out or System.err by a logger.(üêÊ¯
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(à¸ìªøÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(¨€úùÿÿÿÿ
+U	java:S1066"9Replace this use of System.out or System.err by a logger.(òÔÇÍ8úÖ ¯º0
+U	java:S1069"9Replace this use of System.out or System.err by a logger.(µäæ8¶ê ¯º0
+U	java:S106:"9Replace this use of System.out or System.err by a logger.(òÔÇÍ8û³¦¯º0

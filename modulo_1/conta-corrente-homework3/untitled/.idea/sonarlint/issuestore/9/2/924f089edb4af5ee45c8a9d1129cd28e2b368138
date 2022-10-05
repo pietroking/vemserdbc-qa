@@ -1,0 +1,9 @@
+
+]
+java:S1192"GDefine a constant instead of duplicating this literal "000002" 3 times.(ŸŠ”ž
+O
+java:S1854	"9Remove this useless assignment to local variable "teste".(Ó¹³ñ
+@
+java:S1481	"*Remove this unused "teste" local variable.(Ó¹³ñ
+Q	java:S125+"<This block of commented-out lines of code should be removed.(š“„ê
+Q	java:S1256"<This block of commented-out lines of code should be removed.(ÌÉ
