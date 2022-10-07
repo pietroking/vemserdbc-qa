@@ -1,34 +1,0 @@
-
-y
-java:S1192"\Define a constant instead of duplicating this literal "O preÃ§o total Ã©: R$ %.2f
-" 4 times.(Ë¸ªÑ8œžå²¸0
-S	java:S106
-"9Replace this use of System.out or System.err by a logger.(ûª¶ºÿÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(»ßƒˆÿÿÿÿÿ
-1
-java:S6205"Remove this redundant block.(îê›n
-g
-java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(Ë¸ªÑ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Ë¸ªÑ
-X	java:S125"<This block of commented-out lines of code should be removed.(Éü¿Ì8Øõç²¸0
-9
-java:S6205"Remove this redundant block.(©ÜßÓ8Øõç²¸0
-n
-java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(®ñü8ñ­Û²¸0
-N	java:S106"9Replace this use of System.out or System.err by a logger.(®ñü
-X	java:S125"<This block of commented-out lines of code should be removed.(Ñš†Ï8Ùõç²¸0
-9
-java:S6205"Remove this redundant block.(›èÀ8Ùõç²¸0
-n
-java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(ç•ò™8ŸÖÛ²¸0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ç•ò™8ó­Û²¸0
-]	java:S125"<This block of commented-out lines of code should be removed.(Óé×ÿùÿÿÿÿ8Úõç²¸0
-9
-java:S6205"Remove this redundant block.(ç™ ‰8Ûõç²¸0
-n
-java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(€ßæ‘8¡ÖÛ²¸0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(€ßæ‘8¢ÖÛ²¸0
-X	java:S125"<This block of commented-out lines of code should be removed.(Á†åš8Üõç²¸0
-9
-java:S6205!"Remove this redundant block.(üØô8Üõç²¸0
-Z	java:S106""9Replace this use of System.out or System.err by a logger.(Å¦­”þÿÿÿÿ8ñ²Ü²¸0

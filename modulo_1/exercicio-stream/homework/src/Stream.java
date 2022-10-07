@@ -21,19 +21,24 @@ public class Stream {
         lista.stream()
                 .forEach(x -> System.out.println(x.toString()));
         System.out.println("-------------------------------------");
+
         //2- filtrar todas as pessoas com salario maior do que 5 mil (filter)
         System.out.println("2- filtrar todas as pessoas com salario maior do que 5 mil (filter)\n");
         List<Pessoa> listaFiltrada = lista.stream()
-                .filter(x -> x.getSalario() > 5000).toList();
+                .filter(x -> x.getSalario() > 5000)
+                .toList();
         System.out.println(listaFiltrada);
         System.out.println("-------------------------------------");
+
         //3- filtrar todas as pessoas que são desenvolvedoras e organizar por salário crescente (filter, sorted)
         System.out.println("3- filtrar todas as pessoas que são desenvolvedoras e organizar por salário crescente (filter, sorted)\n");
         List<Pessoa> listaFiltrada2 = lista.stream()
                 .filter(x -> x.getCargo().equals("Desenvolvedor"))
-                .sorted(Comparator.comparing(Pessoa::getSalario)).toList();
+                .sorted(Comparator.comparing(Pessoa::getSalario))
+                .toList();
         System.out.println(listaFiltrada2);
         System.out.println("-------------------------------------");
+
         //4- fazer a média salarial de todos
         System.out.println("4- fazer a média salarial de todos\n");
         Double mediaSalario = lista.stream()
@@ -42,47 +47,59 @@ public class Stream {
                 .getAsDouble();
         System.out.println(mediaSalario);
         System.out.println("-------------------------------------");
+
         //5- verificar na lista (utilizando o método anyMatch) se tem alguém que ganha mais do que 20 mil
         System.out.println("5- verificar na lista (utilizando o método anyMatch) se tem alguém que ganha mais do que 20 mil\n");
         boolean listaAny = lista.stream()
                 .anyMatch(x -> x.getSalario() > 20000);
         System.out.println(listaAny);
         System.out.println("-------------------------------------");
+
         //6- retornar uma lista de todos os ids das pessoas
         System.out.println("6- retornar uma lista de todos os ids das pessoas\n");
         List<Integer> listaFiltradaID = lista.stream()
-                        .map(x -> {return x.getId();}).toList();
+                .map(x -> {return x.getId();})
+                .toList();
         System.out.println(listaFiltradaID);
         System.out.println("-------------------------------------");
+
         //7- criar uma nova classe Salario com ID e Salário, utilizando a função "map" do stream, retornar uma lista desse novo objeto
         System.out.println("7- criar uma nova classe Salario com ID e Salário, utilizando a função \"map\" do stream, retornar uma lista desse novo objeto\n");
         List<Salario> listSalario = lista.stream()
-                        .map(x -> {
-                            return new Salario(x.getId(), x.getSalario());
-                        }).toList();
+                .map(x -> {
+                    return new Salario(x.getId(), x.getSalario());
+                })
+                .toList();
         System.out.println(listSalario);
         System.out.println("-------------------------------------");
+
         //8- retornar um HashMap (estrutura de dados, e não uma função map) contendo os ids e os nomes dos colaboradores
         System.out.println("8- retornar um HashMap (estrutura de dados, e não uma função map) contendo os ids e os nomes dos colaboradores\n");
         Map<Integer, String> listaHash = lista.stream()
-                        .collect(Collectors.toMap(Pessoa::getId, Pessoa::getNome));
+                .collect(Collectors.toMap(Pessoa::getId, Pessoa::getNome));
         System.out.println(listaHash);
         System.out.println("-------------------------------------");
+
         //9- com o mapa da 8, retornar o nome com o id=2
         System.out.println("9- com o mapa da 8, retornar o nome com o id=2\n");
         System.out.println(listaHash.get(2));
         System.out.println("-------------------------------------");
+
         //10- verificar se tem alguém que contenha o nome "Paulo" (containsignorecase) na lista e retornar o primeiro elemento que encontrar (findFirst).
         System.out.println("10- verificar se tem alguém que contenha o nome \"Paulo\" (containsignorecase) na lista e retornar o primeiro elemento que encontrar (findFirst).\n");
         Optional<Pessoa> listFirst = lista.stream()
-                        .filter(x -> x.getNome().toLowerCase().contains("paulo")).findFirst();
+                .filter(x -> x.getNome().toLowerCase().contains("paulo"))
+                .findFirst();
         System.out.println(listFirst);
         System.out.println("-------------------------------------");
+
         //    Imprimir o nome e salário dessa pessoa
         System.out.println("Imprimir o nome e salário dessa pessoa\n");
-        Map<String, Double> paulo = listFirst.stream()
-                        .collect(Collectors.toMap(Pessoa::getNome, Pessoa::getSalario));
-        System.out.println(paulo);
+        if(listFirst.isPresent()){
+            Pessoa paulo = listFirst.get();
+            System.out.println(paulo.getNome());
+            System.out.println(paulo.getSalario());
+        }
         System.out.println("-------------------------------------");
     }
 

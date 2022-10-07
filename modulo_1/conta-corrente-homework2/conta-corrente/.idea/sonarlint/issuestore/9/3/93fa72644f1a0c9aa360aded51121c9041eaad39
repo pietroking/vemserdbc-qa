@@ -1,21 +1,0 @@
-
-V	java:S107"AConstructor has 8 parameters, which is greater than 7 authorized.(ãèÿ§
-k
-java:S1104"PMake tipo a static final constant or non-public and provide accessors if needed.(‰ˆƒ…ûÿÿÿÿ
-l
-java:S1104"VMake logradouro a static final constant or non-public and provide accessors if needed.(¬¥¸
-m
-java:S1104"RMake numero a static final constant or non-public and provide accessors if needed.(§Äïàûÿÿÿÿ
-r
-java:S1104"WMake complemento a static final constant or non-public and provide accessors if needed.(Ï§—‚ıÿÿÿÿ
-j
-java:S1104"OMake cep a static final constant or non-public and provide accessors if needed.(¤³„üúÿÿÿÿ
-h
-java:S1104"RMake cidade a static final constant or non-public and provide accessors if needed.(€»¢Ö
-m
-java:S1104	"RMake estado a static final constant or non-public and provide accessors if needed.(£Óôüÿÿÿÿ
-k
-java:S1104
-"PMake pais a static final constant or non-public and provide accessors if needed.(²¼Û©üÿÿÿÿ
-M	java:S106"9Replace this use of System.out or System.err by a logger.(ÆÖ‹
-S	java:S106"9Replace this use of System.out or System.err by a logger.(Œ¬Áùÿÿÿÿ

@@ -1,53 +1,0 @@
-
-S	java:S106"9Replace this use of System.out or System.err by a logger.(Ã¹ ğşÿÿÿÿ
-2
-java:S6205"Remove this redundant block.(×°˜©
-S	java:S106"9Replace this use of System.out or System.err by a logger.(»šŠÿÿÿÿÿ
-1
-java:S6205"Remove this redundant block.(áŸõ0
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Ù³Ÿ
-7
-java:S6205"Remove this redundant block.(Øøëêüÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ò¶Óû
-7
-java:S6205"Remove this redundant block.(ûØê­üÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(°ÿ¹Åıÿÿÿÿ
-2
-java:S6205"Remove this redundant block.(©Û£Â
-S	java:S106"9Replace this use of System.out or System.err by a logger.(’æÒ°ÿÿÿÿÿ
-7
-java:S6205"Remove this redundant block.(‡Ûµˆûÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(÷Á·’şÿÿÿÿ
-7
-java:S6205"Remove this redundant block.(›˜«¨şÿÿÿÿ
-M	java:S106"9Replace this use of System.out or System.err by a logger.(÷©—6
-7
-java:S6205!"Remove this redundant block.(ù¢§ğùÿÿÿÿ
-N	java:S106""9Replace this use of System.out or System.err by a logger.(ûÌ
-7
-java:S6205$"Remove this redundant block.(Âæ˜Œüÿÿÿÿ
-M	java:S106%"9Replace this use of System.out or System.err by a logger.(—à¿2
-7
-java:S6205'"Remove this redundant block.(¡­íÿÿÿÿÿ
-S	java:S106("9Replace this use of System.out or System.err by a logger.(Ÿ¹óÊşÿÿÿÿ
-2
-java:S6205*"Remove this redundant block.(¤§¾¿
-S	java:S106+"9Replace this use of System.out or System.err by a logger.(ÈˆìØùÿÿÿÿ
-7
-java:S6205-"Remove this redundant block.(ŸŠ›ûıÿÿÿÿ
-N	java:S106."9Replace this use of System.out or System.err by a logger.(•ãäê
-2
-java:S62050"Remove this redundant block.(è‹Ş
-N	java:S1061"9Replace this use of System.out or System.err by a logger.(µø…
-7
-java:S62053"Remove this redundant block.(÷öÅ·ıÿÿÿÿ
-N	java:S1064"9Replace this use of System.out or System.err by a logger.(­Ò³ğ
-7
-java:S62056"Remove this redundant block.(•·“·úÿÿÿÿ
-N	java:S1067"9Replace this use of System.out or System.err by a logger.(ŞĞçø
-2
-java:S62059"Remove this redundant block.(©®…Í
-N	java:S106:"9Replace this use of System.out or System.err by a logger.(èØ¼Ç
-2
-java:S6205<"Remove this redundant block.(üØô
-S	java:S106="9Replace this use of System.out or System.err by a logger.(¹óøÿÿÿÿ
