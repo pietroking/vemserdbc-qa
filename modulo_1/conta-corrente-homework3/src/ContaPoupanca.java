@@ -5,6 +5,7 @@ public class ContaPoupanca extends Conta implements Impressao{
     public ContaPoupanca(Cliente cliente, String numeroConta, String agencia, double saldo){
         super(cliente, numeroConta, agencia, saldo);
     }
+    public ContaPoupanca(){}
 
     @Override
     public void imprimir() {

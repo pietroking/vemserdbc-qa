@@ -10,6 +10,7 @@ public abstract class Conta implements Movimentacao {
         this.agencia = agencia;
         this.saldo = saldo;
     }
+    public Conta(){}
 
     public Cliente getCliente() {
         return cliente;
@@ -55,20 +56,20 @@ public abstract class Conta implements Movimentacao {
             this.setSaldo(getSaldo()-valor);
             System.out.println("Saque: R$ "+valor);
 //            this.imprimirContaCorrente();
-            System.out.println("Cliente: "+this.getCliente().getNome()+
-                    "\nConta: "+this.getNumeroConta()+
-                    "\nAgencia: "+this.getAgencia()+
-                    "\nSaldo: R$ "+this.getSaldo());
+//            System.out.println("Cliente: "+this.getCliente().getNome()+
+//                    "\nConta: "+this.getNumeroConta()+
+//                    "\nAgencia: "+this.getAgencia()+
+//                    "\nSaldo: R$ "+this.getSaldo());
             System.out.println("--------------------------------");
             return true;
         }else{
             System.out.println("Saque: R$ "+valor);
             System.out.println("Voce não possui saldo na sua conta para esta retirada.");
 //            this.imprimirContaCorrente();
-            System.out.println("Cliente: "+this.getCliente().getNome()+
-                    "\nConta: "+this.getNumeroConta()+
-                    "\nAgencia: "+this.getAgencia()+
-                    "\nSaldo: R$ "+this.getSaldo());
+//            System.out.println("Cliente: "+this.getCliente().getNome()+
+//                    "\nConta: "+this.getNumeroConta()+
+//                    "\nAgencia: "+this.getAgencia()+
+//                    "\nSaldo: R$ "+this.getSaldo());
             System.out.println("--------------------------------");
             return false;
         }
@@ -80,10 +81,10 @@ public abstract class Conta implements Movimentacao {
             this.setSaldo(getSaldo()+valor);
             System.out.println("Depósito: R$ "+valor);
 //            this.imprimirContaCorrente();
-            System.out.println("Cliente: "+this.getCliente().getNome()+
-                    "\nConta: "+this.getNumeroConta()+
-                    "\nAgencia: "+this.getAgencia()+
-                    "\nSaldo: R$ "+this.getSaldo());
+//            System.out.println("Cliente: "+this.getCliente().getNome()+
+//                    "\nConta: "+this.getNumeroConta()+
+//                    "\nAgencia: "+this.getAgencia()+
+//                    "\nSaldo: R$ "+this.getSaldo());
             System.out.println("--------------------------------");
             return true;
         }else {

@@ -5,6 +5,7 @@ public class ContaPagamento extends Conta implements Impressao {
     public ContaPagamento(Cliente cliente, String numeroConta, String agencia, double saldo){
         super(cliente, numeroConta, agencia, saldo);
     }
+    public ContaPagamento(){}
 
     @Override
     public void imprimir() {
@@ -24,13 +25,13 @@ public class ContaPagamento extends Conta implements Impressao {
         if ((valor+TAXA_SAQUE) <= this.getSaldo()){
             this.setSaldo(this.getSaldo()-valor-TAXA_SAQUE);
             System.out.println("Saque: R$ "+valor);
-            this.imprimir();
+//            this.imprimir();
             return true;
         }else{
             System.out.println("Saque: R$ "+valor);
             System.out.println("Voce não possui saldo na sua conta para esta retirada.");
             System.out.println("--------------------------------");
-            this.imprimir();
+//            this.imprimir();
             return false;
         }
     }
@@ -44,13 +45,13 @@ public class ContaPagamento extends Conta implements Impressao {
         if ((valor) <= this.getSaldo()){
             this.setSaldo(this.getSaldo()-valor);
             System.out.println("Saque: R$ "+valor);
-            this.imprimir();
+//            this.imprimir();
             conta.setSaldo(conta.getSaldo()+valor);
             System.out.println("Depósito: R$ "+valor);
-            System.out.println("Cliente: "+conta.getCliente().getNome()+
-                    "\nConta: "+conta.getNumeroConta()+
-                    "\nAgencia: "+conta.getAgencia()+
-                    "\nSaldo: R$ "+conta.getSaldo());
+//            System.out.println("Cliente: "+conta.getCliente().getNome()+
+//                    "\nConta: "+conta.getNumeroConta()+
+//                    "\nAgencia: "+conta.getAgencia()+
+//                    "\nSaldo: R$ "+conta.getSaldo());
             System.out.println("--------------------------------");
             return true;
         }else{

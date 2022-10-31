@@ -6,6 +6,7 @@ public class ContaCorrente extends Conta implements Impressao{
         super(cliente, numeroConta, agencia, saldo);
         this.chequeEspecial = chequeEspecial;
     }
+    public ContaCorrente(){}
 
     public boolean sacar(double valor){
         if (valor<0){
@@ -15,12 +16,12 @@ public class ContaCorrente extends Conta implements Impressao{
         if ((valor>0) && (this.retornarSaldoComChequeEspecial()-valor>=0)){
             this.setSaldo(getSaldo()-valor);
             System.out.println("Saque: R$ "+valor);
-            this.imprimir();
+//            this.imprimir();
             return true;
         }else{
             System.out.println("Saque: R$ "+valor);
             System.out.println("Voce não possui saldo na sua conta para esta retirada.");
-            this.imprimir();
+//            this.imprimir();
             return false;
         }
     }
