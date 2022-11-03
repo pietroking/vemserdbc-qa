@@ -1,0 +1,18 @@
+{
+  "id": 10,
+  "category": {
+    "id": 2,
+    "name": "dog"
+  },
+  "name": "Harley",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 2022,
+      "name": "qa"
+    }
+  ],
+  "status": "available"
+}
