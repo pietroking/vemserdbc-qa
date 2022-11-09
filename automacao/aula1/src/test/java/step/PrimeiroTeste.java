@@ -1,42 +1,12 @@
-package Itera;
+package step;
 
 import com.github.javafaker.Faker;
-import org.junit.After;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.concurrent.TimeUnit;
 
-public class PrimeiroTeste {
-    public static WebDriver driver;
-    public static WebDriverWait wait;
-
-    @Before
-    public void abrirNavegador() {
-        // Informando a automação qual app vai utilizar
-        System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
-
-        driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 40);
-
-        // Abrir navegador = .get
-        driver.get("https://itera-qa.azurewebsites.net/");
-        // Maximar
-        driver.manage().window().maximize();
-        // daley
-        driver.manage().timeouts().implicitlyWait(6000, TimeUnit.MILLISECONDS);
-    }
-
-    @After
-    public void fecharNavegador() {
-        // Informando a automaçãoal app vai utilizar
-        driver.quit();
-    }
+public class PrimeiroTeste extends BaseTest{
 
     @Test
     public void validarLoginComUsernameSenhaValidos() {
@@ -50,14 +20,15 @@ public class PrimeiroTeste {
 
         Assert.assertEquals(resp, "Welcome teste123");
     }
-
     @Test
-    public void validarLoginComUsernameSenhaInvalidos() {
+    public void validarLoginComUsernameSenhaInvalidos() throws InterruptedException {
 
         driver.findElement(By.cssSelector("#navbarColor01 > form > ul > li:nth-child(2) > a")).click();
         driver.findElement(By.cssSelector("[id=\"Username\"]")).sendKeys("");
         driver.findElement(By.cssSelector("[id=\"Password\"]")).sendKeys("");
         driver.findElement(By.cssSelector("[name=\"login\"]")).click();
+
+        Thread.sleep(2000);
 
         String teste = driver.findElement(By.cssSelector("body > div > div:nth-child(4) > form > table > tbody > tr:nth-child(5) > td > label")).getText();
 
@@ -79,14 +50,13 @@ public class PrimeiroTeste {
         driver.findElement(By.cssSelector("[id=\"ConfirmPassword\"]")).sendKeys(senha);
         driver.findElement(By.cssSelector("[id=\"submit\"]")).click();
 
-
         String resp = driver.findElement(By.cssSelector("body > div > form > div > div:nth-child(11) > div > label")).getText();
 
         Assert.assertEquals(resp, "Registration Successful");
     }
 
     @Test
-    public void validarCriarUsuarioSemNome(){
+    public void validarCriarUsuarioSemNome() throws InterruptedException {
 
         Faker faker = new Faker();
         driver.findElement(By.cssSelector("#navbarColor01 > form > ul > li:nth-child(1) > a")).click();
@@ -99,6 +69,7 @@ public class PrimeiroTeste {
         driver.findElement(By.cssSelector("[id=\"ConfirmPassword\"]")).sendKeys(senha);
         driver.findElement(By.cssSelector("[id=\"submit\"]")).click();
 
+        Thread.sleep(2000);
 
         String resp = driver.findElement(By.cssSelector("body > div > form > div > div:nth-child(2) > div > span")).getText();
 
@@ -106,16 +77,17 @@ public class PrimeiroTeste {
     }
 
     @Test
-    public void validarCriarUsuarioSemPreencher(){
+    public void validarCriarUsuarioSemPreencher() throws InterruptedException {
 
         driver.findElement(By.cssSelector("#navbarColor01 > form > ul > li:nth-child(1) > a")).click();
         driver.findElement(By.cssSelector("[id=\"submit\"]")).click();
 
-
+        Thread.sleep(2000);
         String resp1 = driver.findElement(By.cssSelector("body > div > form > div > div:nth-child(2) > div > span")).getText();
         String resp2 = driver.findElement(By.cssSelector("#Surname-error")).getText();
         String resp3 = driver.findElement(By.cssSelector("#Username-error")).getText();
         String resp4 = driver.findElement(By.cssSelector("#Password-error")).getText();
+
 
         Assert.assertEquals(resp1, "Please enter first name");
         Assert.assertEquals(resp2, "Please enter surname");
@@ -124,7 +96,7 @@ public class PrimeiroTeste {
     }
 
     @Test
-    public void validarCriarUsuarioConfirmarSenhaErrada(){
+    public void validarCriarUsuarioConfirmarSenhaErrada() throws InterruptedException {
 
         Faker faker = new Faker();
         driver.findElement(By.cssSelector("#navbarColor01 > form > ul > li:nth-child(1) > a")).click();
@@ -134,6 +106,7 @@ public class PrimeiroTeste {
         driver.findElement(By.cssSelector("[id=\"Password\"]")).sendKeys(faker.internet().password());
         driver.findElement(By.cssSelector("[id=\"ConfirmPassword\"]")).sendKeys(faker.internet().password());
         driver.findElement(By.cssSelector("[id=\"submit\"]")).click();
+        Thread.sleep(2000);
 
         String resp = driver.findElement(By.cssSelector("body > div > form > div > div:nth-child(9) > div > span")).getText();
 
@@ -141,7 +114,7 @@ public class PrimeiroTeste {
     }
 
     @Test
-    public void validarTextareaPratice(){
+    public void validarTextareaPratice() throws InterruptedException {
 
         Faker faker = new Faker();
         String name = faker.name().fullName();
@@ -162,6 +135,8 @@ public class PrimeiroTeste {
         String addressTest = driver.findElement(By.cssSelector("[id=\"address\"]")).getText();
         driver.findElement(By.cssSelector("[name=\"submit\"]")).click();
 
+        Thread.sleep(2000);
+
 //        Assert.assertEquals(name, nomeTest);
 //        Assert.assertEquals(phone, phoneTest);
 //        Assert.assertEquals(email, emailTest);
@@ -171,13 +146,14 @@ public class PrimeiroTeste {
     //nao tem resposta, nem se deixar algum campo em branco
 
     @Test
-    public void validarCheckBoxRadioButtonPratice() {
+    public void validarCheckBoxRadioButtonPratice() throws InterruptedException {
 
         driver.findElement(By.cssSelector("#navbarColor01 > ul > li:nth-child(3) > a")).click();
         driver.findElement(By.cssSelector("[id=\"male\"]")).click();
         driver.findElement(By.cssSelector("[id=\"monday\"]")).click();
         driver.findElement(By.cssSelector("[id=\"sunday\"]")).click();
 
+        Thread.sleep(2000);
         Assert.assertTrue(driver.findElement(By.cssSelector("[id=\"male\"]")).isSelected());
         Assert.assertFalse(driver.findElement(By.cssSelector("[id=\"female\"]")).isSelected());
         Assert.assertTrue(driver.findElement(By.cssSelector("[id=\"monday\"]")).isSelected());
@@ -188,13 +164,14 @@ public class PrimeiroTeste {
         Assert.assertFalse(driver.findElement(By.cssSelector("[id=\"saturday\"]")).isSelected());
         Assert.assertTrue(driver.findElement(By.cssSelector("[id=\"sunday\"]")).isSelected());
     }
-    
+
     @Test
-    public void validarDropDownPratice() {
+    public void validarDropDownPratice() throws InterruptedException {
 
         driver.findElement(By.cssSelector("#navbarColor01 > ul > li:nth-child(3) > a")).click();
         driver.findElement(By.cssSelector("body > div > div:nth-child(5) > div.card-body > div > select > option:nth-child(7)")).click();
 
+        Thread.sleep(2000);
         String result = driver.findElement(By.cssSelector("body > div > div:nth-child(5) > div.card-body > div > select > option:nth-child(7)")).getText();
 
         Assert.assertEquals(result, "Italy");
@@ -202,12 +179,13 @@ public class PrimeiroTeste {
     }
 
     @Test
-    public void validarCheckBoxRadioButtonPraticeXpath() {
+    public void validarCheckBoxRadioButtonPraticeXpath() throws InterruptedException {
 
         driver.findElement(By.cssSelector("#navbarColor01 > ul > li:nth-child(3) > a")).click();
         driver.findElement(By.cssSelector("[for=\"3years\"]")).click();
         driver.findElement(By.cssSelector("[for=\"selenium\"]")).click();
         driver.findElement(By.cssSelector("[for=\"cucumber\"]")).click();
+        Thread.sleep(2000);
 
         Assert.assertFalse(driver.findElement(By.cssSelector("[for=\"1year\"]")).isSelected());
         Assert.assertFalse(driver.findElement(By.cssSelector("[for=\"2years\"]")).isSelected());
