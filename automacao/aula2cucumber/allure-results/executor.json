@@ -1,0 +1,10 @@
+[
+  { "name":"Pietro",
+  "buildName":"Aula",
+  "type":"jenkins"
+  },
+  {"name":"Jaci",
+    "buildName":"Aula",
+    "type":"jenkins"
+  }
+]
