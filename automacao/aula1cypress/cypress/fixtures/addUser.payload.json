@@ -1,0 +1,11 @@
+{
+    "email":"teste@teste.com",
+    "nome": "Tester 1000",
+    "senha" : "123456",
+    "rua" : "Avenida 20",
+    "numero" : "32",
+    "cep": "9257841",
+    "bairro" : "Voo livre",
+    "cidade" : "Sapiranga",
+    "estado": "RJ"
+  }

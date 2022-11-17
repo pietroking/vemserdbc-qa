@@ -1,3 +1,9 @@
 {
-    "projectId": "j147do"
+    "projectId": "j147do",
+    "env" : {
+            "API_BASE": "https://api.qaic.com.br/wp-json",
+            "ACCESS_TOKEN" :"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5xYWljLmNvbS5iciIsImlhdCI6MTY2ODYxOTEyNSwibmJmIjoxNjY4NjE5MTI1LCJleHAiOjE2Njg3MDU1MjUsImRhdGEiOnsidXNlciI6eyJpZCI6IjQ4In19fQ.fdu35a-EDmxKIX_JvyynqwpRjPD-EbseppkNHtAMpos",
+            "USERNAME" :"teste.0004@gmail.com",
+            "PASSWORD" :"123456"
+    }
 }
