@@ -1,0 +1,80 @@
+{
+    "type": "object",
+    "required": [
+        "totalElements",
+        "totalPages",
+        "page",
+        "size",
+        "content"
+    ],
+    "properties": {
+        "totalElements": {
+            "type": "number"
+        },
+        "totalPages": {
+            "type": "number"
+        },
+        "page": {
+            "type": "number"
+        },
+        "size": {
+            "type": "number"
+        },
+        "content": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "idPessoa",
+                    "tipo",
+                    "logradouro",
+                    "numero",
+                    "complemento",
+                    "cep",
+                    "cidade",
+                    "estado",
+                    "pais",
+                    "idEndereco"
+                ],
+                "properties": {
+                    "idPessoa": {
+                        "type": [
+                            "number",
+                            "null"
+                        ]
+                    },
+                    "tipo": {
+                        "type": "string"
+                    },
+                    "logradouro": {
+                        "type": "string"
+                    },
+                    "numero": {
+                        "type": "number"
+                    },
+                    "complemento": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "cep": {
+                        "type": "string"
+                    },
+                    "cidade": {
+                        "type": "string"
+                    },
+                    "estado": {
+                        "type": "string"
+                    },
+                    "pais": {
+                        "type": "string"
+                    },
+                    "idEndereco": {
+                        "type": "number"
+                    }
+                }
+            }
+        }
+    }
+}
