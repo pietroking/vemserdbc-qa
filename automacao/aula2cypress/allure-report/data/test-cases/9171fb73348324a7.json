@@ -1,0 +1,156 @@
+{
+  "uid" : "9171fb73348324a7",
+  "name" : "Contrato - Validar contrato GET endereco",
+  "fullName" : "Contrato - Validar contrato GET endereco",
+  "historyId" : "b473d66e5c6dbde07fd1812375cb10f2",
+  "time" : {
+    "start" : 1668800822036,
+    "stop" : 1668800822126,
+    "duration" : 90
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/dbc-pessoa-api/endereco",
+      "time" : {
+        "start" : 1668800822041,
+        "stop" : 1668800822119,
+        "duration" : 78
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1668800822119,
+        "stop" : 1668800822120,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1668800822120,
+        "stop" : 1668800822120,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "fixture (\"endereco.contrato\")",
+      "time" : {
+        "start" : 1668800822120,
+        "stop" : 1668800822123,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contrato Endereco"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "10dd7791710f35b6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668800670992,
+        "stop" : 1668800671075,
+        "duration" : 83
+      }
+    }, {
+      "uid" : "ea58f8530d47166f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668799944121,
+        "stop" : 1668799944205,
+        "duration" : 84
+      }
+    }, {
+      "uid" : "484a4d378f06547b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668799731389,
+        "stop" : 1668799731481,
+        "duration" : 92
+      }
+    }, {
+      "uid" : "fe9c96f171f5532e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668799655294,
+        "stop" : 1668799655388,
+        "duration" : 94
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "21e37d34466901d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1668799655294,
+          "stop" : 1668799655388,
+          "duration" : 94
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9171fb73348324a7.json",
+  "parameterValues" : [ ]
+}

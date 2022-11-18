@@ -1,0 +1,15 @@
+{
+  "total" : 46,
+  "items" : [ {
+    "uid" : "973a763f82b2f942c73672a22f1b42a9",
+    "name" : "Validar contratos",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

@@ -1,6 +1,10 @@
 import Activities from '../../service/fakeRestApi.service'
 const activities = new Activities
 
+const allure = Cypress.Allure.reporter.getInterface();
+allure.epic('Validar contratos');
+
+allure.feature("Contrato Pessoa");
 context('Contrato Pessoas', () => {
     it('Contrato - Validar contrato GET pessoas', () => {
         activities.GETPessoacontratoRequest("activities.contratos")
@@ -27,7 +31,8 @@ context('Contrato Pessoas', () => {
     });
 })
 
-context('Contrato Contrato', () => {
+allure.feature('Contrato Contato');
+context('Contrato Contato', () => {
     it('Contrato - Validar contrato GET contato', () => {
         activities.GETContatocontratoRequest("contato.contrato")
     });
@@ -37,6 +42,7 @@ context('Contrato Contrato', () => {
     });
 })
 
+allure.feature('Contrato Endereco');
 context('Contrato Endereco', () => {
     it('Contrato - Validar contrato GET endereco', () => {
         activities.GETEnderecocontratoRequest("endereco.contrato")

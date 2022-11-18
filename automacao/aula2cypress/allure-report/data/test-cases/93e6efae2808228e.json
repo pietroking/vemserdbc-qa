@@ -1,0 +1,309 @@
+{
+  "uid" : "93e6efae2808228e",
+  "name" : "GET - Listar pessoas",
+  "fullName" : "GET - Listar pessoas",
+  "historyId" : "cb60bcad20876a0ed360d7888678fdcf",
+  "time" : {
+    "start" : 1668799733187,
+    "stop" : 1668799733263,
+    "duration" : 76
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1668799732836,
+        "stop" : 1668799733014,
+        "duration" : 178
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/dbc-pessoa-api/auth",
+        "time" : {
+          "start" : 1668799732838,
+          "stop" : 1668799733009,
+          "duration" : 171
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1668799733009,
+          "stop" : 1668799733010,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1668799733010,
+          "stop" : 1668799733014,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "assert expected **200** to equal **200**",
+        "time" : {
+          "start" : 1668799733014,
+          "stop" : 1668799733014,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "200"
+        }, {
+          "name" : "expected",
+          "value" : "200"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1668799733016,
+        "stop" : 1668799733184,
+        "duration" : 168
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/dbc-pessoa-api/auth",
+        "time" : {
+          "start" : 1668799733017,
+          "stop" : 1668799733181,
+          "duration" : 164
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1668799733181,
+          "stop" : 1668799733182,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1668799733182,
+          "stop" : 1668799733184,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "assert expected **200** to equal **200**",
+        "time" : {
+          "start" : 1668799733184,
+          "stop" : 1668799733184,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "200"
+        }, {
+          "name" : "expected",
+          "value" : "200"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/dbc-pessoa-api/pessoa",
+      "time" : {
+        "start" : 1668799733189,
+        "stop" : 1668799733254,
+        "duration" : 65
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1668799733254,
+        "stop" : 1668799733254,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1668799733254,
+        "stop" : 1668799733262,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1668799733261,
+        "stop" : 1668799733261,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **{ Object (totalElements, totalPages, ...) }** not to be empty",
+      "time" : {
+        "start" : 1668799733261,
+        "stop" : 1668799733262,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "{\n  \"totalElements\": 324,\n  \"totalPages\": 17,\n  \"page\": 0,\n  \"size\": 20,\n  \"content\": [\n    {\n      \"nome\": \"Nome Teste Cypress\",\n      \"dataNascimento\": \"2022-11-11\",\n      \"cpf\": \"03336669990\",\n      \"email\": \"nome.teste@dbccompany.com.br\",\n      \"idPessoa\": 5512\n    },\n    {\n      \"nome\": \"Nome Teste Cypress\",\n      \"dataNascimento\": \"2022-11-11\",\n      \"cpf\": \"03336669990\",\n      \"email\": \"nome.teste@dbccompany.com.br\",\n      \"idPessoa\": 5518\n    },\n    {\n      \"nome\": \"Alain\",\n      \"dataNascimento\": \"2003-12-08\",\n      \"cpf\": \"1233563152\",\n      \"email\": \"batman@gmail.com\",\n      \"idPessoa\": 5503\n    },\n    {\n      \"nome\": \"Alain123\",\n      \"dataNascimento\": \"2003-12-08\",\n      \"cpf\": \"1233563152\",\n      \"email\": \"batman@gmail.com\",\n      \"idPessoa\": 5510\n    },\n    {\n      \"nome\": \"Nome Teste Cypress\",\n      \"dataNascimento\": \"2022-11-11\",\n      \"cpf\": \"03336669990\",\n      \"email\": \"nome.teste@dbccompany.com.br\",\n      \"idPessoa\": 5667\n    },\n    {\n      \"nome\": \"Alain\",\n      \"dataNascimento\": \"2003-12-08\",\n      \"cpf\": \"1233563152\",\n      \"email\": \"batman@gmail.com\",\n      \"idPessoa\": 5516\n    },\n    {\n      \"nome\": \"Nome Teste Cypress\",\n      \"dataNascimento\": \"2022-11-11\",\n      \"cpf\": \"03336669990\",\n      \"email\": \"nome.teste@dbccompany.com.br\",\n      \"idPessoa\": 5517\n    },\n    {\n      \"nome\": \"Gabriel Luppi\",\n      \"dataNascimento\": \"2003-12-08\",\n      \"cpf\": \"56448825002\",\n      \"email\": \"gabriel.luppi@dbccompany.com.br\",\n      \"idPessoa\": 5519\n    },\n    {\n      \"nome\": \"Nome Teste Cypress\",\n      \"dataNascimento\": \"2022-11-11\",\n      \"cpf\": \"03336669990\",\n      \"email\": \"nome.teste@dbccompany.com.br\",\n      \"idPessoa\": 5520\n    },\n    {\n      \"nome\": \"User Tester QA\",\n      \"dataNascimento\": \"2001-01-01\",\n      \"cpf\": \"12345665421\",\n      \"email\": \"user.tester.qa@dbccompany.com.br\",\n      \"idPessoa\": 6027\n    },\n    {\n      \"nome\": \"Rawad\",\n      \"dataNascimento\": \"1991-10-19\",\n      \"cpf\": \"11111122111\",\n      \"email\": \"gabriel.luppi@dbccompany.com.br\",\n      \"idPessoa\": 5712\n    },\n    {\n      \"nome\": \"User Tester QA\",\n      \"dataNascimento\": \"2001-01-01\",\n      \"cpf\": \"12345665421\",\n      \"email\": \"user.tester.qa@dbccompany.com.br\",\n      \"idPessoa\": 5672\n    },\n    {\n      \"nome\": \"Igor Dinho\",\n      \"dataNascimento\": \"1985-07-08\",\n      \"cpf\": \"741258\",\n      \"email\": \"igor.dinho@dbccompany.com.br\",\n      \"idPessoa\": 5876\n    },\n    {\n      \"nome\": \"Nome Teste Cypress\",\n      \"dataNascimento\": \"2022-11-11\",\n      \"cpf\": \"03336669990\",\n      \"email\": \"nome.teste@dbccompany.com.br\",\n      \"idPessoa\": 5839\n    },\n    {\n      \"nome\": \"User Tester QA\",\n      \"dataNascimento\": \"2001-01-01\",\n      \"cpf\": \"12345665421\",\n      \"email\": \"user.tester.qa@dbccompany.com.br\",\n      \"idPessoa\": 5844\n    },\n    {\n      \"nome\": \"User Tester QA\",\n      \"dataNascimento\": \"2001-01-01\",\n      \"cpf\": \"12345665421\",\n      \"email\": \"user.tester.qa@dbccompany.com.br\",\n      \"idPessoa\": 5882\n    },\n    {\n      \"nome\": \"Nome Teste Cypress\",\n      \"dataNascimento\": \"2022-11-11\",\n      \"cpf\": \"03336669990\",\n      \"email\": \"nome.teste@dbccompany.com.br\",\n      \"idPessoa\": 5763\n    },\n    {\n      \"nome\": \"User Tester QA\",\n      \"dataNascimento\": \"2001-01-01\",\n      \"cpf\": \"12345665421\",\n      \"email\": \"user.tester.qa@dbccompany.com.br\",\n      \"idPessoa\": 5768\n    },\n    {\n      \"nome\": \"Rawad\",\n      \"dataNascimento\": \"1991-10-19\",\n      \"cpf\": \"11111122111\",\n      \"email\": \"gabriel.luppi@dbccompany.com.br\",\n      \"idPessoa\": 5787\n    },\n    {\n      \"nome\": \"Rawad\",\n      \"dataNascimento\": \"1991-10-19\",\n      \"cpf\": \"11111122111\",\n      \"email\": \"gabriel.luppi@dbccompany.com.br\",\n      \"idPessoa\": 6003\n    }\n  ]\n}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Pessoa"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "93e6efae2808228e.json",
+  "parameterValues" : [ ]
+}

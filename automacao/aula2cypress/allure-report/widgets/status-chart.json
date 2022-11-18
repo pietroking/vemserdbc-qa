@@ -1,0 +1,511 @@
+[ {
+  "uid" : "39c3484e97c39920",
+  "name" : "GET - Listar endereco por ID",
+  "time" : {
+    "start" : 1668800828612,
+    "stop" : 1668800828861,
+    "duration" : 249
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dac485e4e38da8a0",
+  "name" : "PUT - Atualiza pessoa errado",
+  "time" : {
+    "start" : 1668800824242,
+    "stop" : 1668800824308,
+    "duration" : 66
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "919b809b321ee318",
+  "name" : "GET - Listar pessoas",
+  "time" : {
+    "start" : 1668800823807,
+    "stop" : 1668800823867,
+    "duration" : 60
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e994b62fbe6dc43",
+  "name" : "Contrato - Validar contrato GET relatorio",
+  "time" : {
+    "start" : 1668800821522,
+    "stop" : 1668800821617,
+    "duration" : 95
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "69bb2d6b998c2e1d",
+  "name" : "GET - Listar contato por ID erro",
+  "time" : {
+    "start" : 1668800827364,
+    "stop" : 1668800827421,
+    "duration" : 57
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6b7568bd9da7d6e",
+  "name" : "Contrato - Validar contrato GET pessoa completa",
+  "time" : {
+    "start" : 1668800821822,
+    "stop" : 1668800821899,
+    "duration" : 77
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "96faaa98e820425f",
+  "name" : "DELETE - Deletando endereco erro",
+  "time" : {
+    "start" : 1668800828237,
+    "stop" : 1668800828296,
+    "duration" : 59
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1d7ac8c96bbfc8c9",
+  "name" : "Contrato - Validar contrato GET pessoa endereco",
+  "time" : {
+    "start" : 1668800821752,
+    "stop" : 1668800821819,
+    "duration" : 67
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2f19ec108ad10ae9",
+  "name" : "GET - Listar pessoa completa",
+  "time" : {
+    "start" : 1668800825273,
+    "stop" : 1668800825461,
+    "duration" : 188
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "669f8876e43dd9ae",
+  "name" : "PUT - Atualizar contato erro",
+  "time" : {
+    "start" : 1668800826738,
+    "stop" : 1668800826803,
+    "duration" : 65
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b3b1a61692534de3",
+  "name" : "Contrato - Validar contrato GET contato por id",
+  "time" : {
+    "start" : 1668800821970,
+    "stop" : 1668800822033,
+    "duration" : 63
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2b48426351dedec",
+  "name" : "GET - Listar endereco por ID erro",
+  "time" : {
+    "start" : 1668800828864,
+    "stop" : 1668800828929,
+    "duration" : 65
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e1c0aeedeb861d99",
+  "name" : "DELETE - Delete pessoa",
+  "time" : {
+    "start" : 1668800824310,
+    "stop" : 1668800824428,
+    "duration" : 118
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2b68cd5daad4f297",
+  "name" : "GET - Listar pessoa com endereco errado",
+  "time" : {
+    "start" : 1668800825712,
+    "stop" : 1668800825775,
+    "duration" : 63
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "66fe16ddaf7ebca2",
+  "name" : "POST - Add pessoa com erro",
+  "time" : {
+    "start" : 1668800823998,
+    "stop" : 1668800824052,
+    "duration" : 54
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c8d5fb4b5bbcd3d3",
+  "name" : "GET - Listar enderecos",
+  "time" : {
+    "start" : 1668800827423,
+    "stop" : 1668800827505,
+    "duration" : 82
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8d386e279f8b6fc2",
+  "name" : "PUT - Atualizar contato",
+  "time" : {
+    "start" : 1668800826433,
+    "stop" : 1668800826736,
+    "duration" : 303
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a22d3db62bae831",
+  "name" : "Contrato - Validar contrato GET by name",
+  "time" : {
+    "start" : 1668800821621,
+    "stop" : 1668800821682,
+    "duration" : 61
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "459bcb55c4210a49",
+  "name" : "DELETE - Delete pessoa errado",
+  "time" : {
+    "start" : 1668800824431,
+    "stop" : 1668800824489,
+    "duration" : 58
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7cc715bba9ec2607",
+  "name" : "GET - Listar endereco por pais",
+  "time" : {
+    "start" : 1668800828932,
+    "stop" : 1668800829047,
+    "duration" : 115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e020803443e5b7a",
+  "name" : "GET - Listar endereco por idPessoa",
+  "time" : {
+    "start" : 1668800828298,
+    "stop" : 1668800828543,
+    "duration" : 245
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce43851fad0b4818",
+  "name" : "GET - Listar contato por ID",
+  "time" : {
+    "start" : 1668800827115,
+    "stop" : 1668800827361,
+    "duration" : 246
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4ed9b982a902a994",
+  "name" : "POST - Add endereco erro",
+  "time" : {
+    "start" : 1668800827782,
+    "stop" : 1668800827977,
+    "duration" : 195
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c1a627c20c9a8dd",
+  "name" : "Contrato - Validar contrato GET endereco por pais",
+  "time" : {
+    "start" : 1668800822257,
+    "stop" : 1668800822373,
+    "duration" : 116
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "34763dff5a828802",
+  "name" : "GET - Listar contatos",
+  "time" : {
+    "start" : 1668800826019,
+    "stop" : 1668800826077,
+    "duration" : 58
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ccf28d7c1a5ec4ac",
+  "name" : "POST - Add pessoa",
+  "time" : {
+    "start" : 1668800823871,
+    "stop" : 1668800823995,
+    "duration" : 124
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "462bc26f86eb06f3",
+  "name" : "GET - Listar pessoa por nome erro",
+  "time" : {
+    "start" : 1668800824677,
+    "stop" : 1668800824741,
+    "duration" : 64
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dceaa939dc9a55e4",
+  "name" : "GET - Listar pessoa por CPF",
+  "time" : {
+    "start" : 1668800824743,
+    "stop" : 1668800824929,
+    "duration" : 186
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4b9310301b7196e4",
+  "name" : "POST - Add contato errado",
+  "time" : {
+    "start" : 1668800826261,
+    "stop" : 1668800826431,
+    "duration" : 170
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "84907830edeab16b",
+  "name" : "GET - Listar endereco por idPessoa erro",
+  "time" : {
+    "start" : 1668800828546,
+    "stop" : 1668800828610,
+    "duration" : 64
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1ecc2f7f73e2b0de",
+  "name" : "GET - Listar pessoa com contato",
+  "time" : {
+    "start" : 1668800825777,
+    "stop" : 1668800825954,
+    "duration" : 177
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "709d602627465919",
+  "name" : "POST - Add endereco",
+  "time" : {
+    "start" : 1668800827508,
+    "stop" : 1668800827779,
+    "duration" : 271
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b4f04ba6bc1886d",
+  "name" : "DELETE - Deletando contato",
+  "time" : {
+    "start" : 1668800826807,
+    "stop" : 1668800827051,
+    "duration" : 244
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2e7f442274ef0aaf",
+  "name" : "GET - Listar pessoa com relatorio errado",
+  "time" : {
+    "start" : 1668800825214,
+    "stop" : 1668800825270,
+    "duration" : 56
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1c3a3ef859677c1c",
+  "name" : "Contrato - Validar contrato GET endereco por idEndereco",
+  "time" : {
+    "start" : 1668800822128,
+    "stop" : 1668800822193,
+    "duration" : 65
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a659a5981beb0fc2",
+  "name" : "Contrato - Validar contrato GET endereco por idPessoa",
+  "time" : {
+    "start" : 1668800822195,
+    "stop" : 1668800822255,
+    "duration" : 60
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9171fb73348324a7",
+  "name" : "Contrato - Validar contrato GET endereco",
+  "time" : {
+    "start" : 1668800822036,
+    "stop" : 1668800822126,
+    "duration" : 90
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "471655b20e4ba84b",
+  "name" : "GET - Listar pessoa com endereco",
+  "time" : {
+    "start" : 1668800825528,
+    "stop" : 1668800825710,
+    "duration" : 182
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b359eb50985b4a75",
+  "name" : "GET - Listar pessoa por nome",
+  "time" : {
+    "start" : 1668800824491,
+    "stop" : 1668800824675,
+    "duration" : 184
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "34be0797cebe2081",
+  "name" : "GET - Listar pessoa com contato errado",
+  "time" : {
+    "start" : 1668800825957,
+    "stop" : 1668800826016,
+    "duration" : 59
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "436155aaeb423b40",
+  "name" : "POST - Add contato",
+  "time" : {
+    "start" : 1668800826080,
+    "stop" : 1668800826258,
+    "duration" : 178
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28b516ddc65ea296",
+  "name" : "GET - Listar endereco por pais erro",
+  "time" : {
+    "start" : 1668800829049,
+    "stop" : 1668800829108,
+    "duration" : 59
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "27e69bd3f1071258",
+  "name" : "DELETE - Deletando endereco",
+  "time" : {
+    "start" : 1668800827980,
+    "stop" : 1668800828235,
+    "duration" : 255
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d55dc009bccb2a10",
+  "name" : "Contrato - Validar contrato GET contato",
+  "time" : {
+    "start" : 1668800821902,
+    "stop" : 1668800821967,
+    "duration" : 65
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4049c71a9a492fe5",
+  "name" : "GET - Listar pessoa completa errada",
+  "time" : {
+    "start" : 1668800825464,
+    "stop" : 1668800825524,
+    "duration" : 60
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f2ee7aa08ba2f9ba",
+  "name" : "Contrato - Validar contrato GET pessoas",
+  "time" : {
+    "start" : 1668800821430,
+    "stop" : 1668800821520,
+    "duration" : 90
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3475b4a2b2b8666c",
+  "name" : "DELETE - Deletando contato errado",
+  "time" : {
+    "start" : 1668800827053,
+    "stop" : 1668800827113,
+    "duration" : 60
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5aea0110e2b05125",
+  "name" : "PUT - Atualiza pessoa",
+  "time" : {
+    "start" : 1668800824054,
+    "stop" : 1668800824239,
+    "duration" : 185
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60dc750498dba431",
+  "name" : "GET - Listar pessoa por CPF errado",
+  "time" : {
+    "start" : 1668800824932,
+    "stop" : 1668800824996,
+    "duration" : 64
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd8a9002b51087e",
+  "name" : "GET - Listar pessoa com relatorio",
+  "time" : {
+    "start" : 1668800824999,
+    "stop" : 1668800825211,
+    "duration" : 212
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "95d2367e9fbd1549",
+  "name" : "Contrato - Validar contrato GET pessoa contato",
+  "time" : {
+    "start" : 1668800821684,
+    "stop" : 1668800821749,
+    "duration" : 65
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

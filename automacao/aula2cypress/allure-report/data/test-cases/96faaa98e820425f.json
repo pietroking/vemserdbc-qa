@@ -1,0 +1,183 @@
+{
+  "uid" : "96faaa98e820425f",
+  "name" : "DELETE - Deletando endereco erro",
+  "fullName" : "DELETE - Deletando endereco erro",
+  "historyId" : "ac4892247ca522baeae9b327c9939f07",
+  "time" : {
+    "start" : 1668800828237,
+    "stop" : 1668800828296,
+    "duration" : 59
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "DELETE 404 http://vemser-dbc.dbccompany.com.br:39000/vemser/dbc-pessoa-api/endereco/35",
+      "time" : {
+        "start" : 1668800828240,
+        "stop" : 1668800828294,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1668800828294,
+        "stop" : 1668800828294,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1668800828294,
+        "stop" : 1668800828296,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **404** to equal **404**",
+      "time" : {
+        "start" : 1668800828296,
+        "stop" : 1668800828296,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "404"
+      }, {
+        "name" : "expected",
+        "value" : "404"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **{idEndereco} nao encontrado** to equal **{idEndereco} nao encontrado**",
+      "time" : {
+        "start" : 1668800828296,
+        "stop" : 1668800828296,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "{idEndereco} nao encontrado"
+      }, {
+        "name" : "expected",
+        "value" : "{idEndereco} nao encontrado"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Endereco"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cc38b9f7fb778dd3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668800677042,
+        "stop" : 1668800677107,
+        "duration" : 65
+      }
+    }, {
+      "uid" : "ee517a6ab7d7e95b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668799950887,
+        "stop" : 1668799950944,
+        "duration" : 57
+      }
+    }, {
+      "uid" : "541cb98efa74393d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668799738182,
+        "stop" : 1668799738246,
+        "duration" : 64
+      }
+    }, {
+      "uid" : "2bbd4c116ca12143",
+      "status" : "passed",
+      "time" : {
+        "start" : 1668799661542,
+        "stop" : 1668799661605,
+        "duration" : 63
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "277ef3a08302a8b2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1668799661542,
+          "stop" : 1668799661605,
+          "duration" : 63
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "96faaa98e820425f.json",
+  "parameterValues" : [ ]
+}
