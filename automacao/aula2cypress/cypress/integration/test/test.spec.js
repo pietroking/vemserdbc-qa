@@ -31,7 +31,7 @@ context('Pessoa', () => {
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
     });
 
-    it.only('POST - Add pessoa com erro', () => {
+    it('POST - Add pessoa com erro', () => {
         pessoaService.POSTpessoaRequest(pessoaErrado).should((response) => {
             expect(response.status).to.eq(400);
             expect(response.body.errors[0]).to.eq('nome: must not be blank')
@@ -50,12 +50,26 @@ context('Pessoa', () => {
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
     });
 
+    it('PUT - Atualiza pessoa errado', () => {
+       pessoaService.PUTpessoaRequest(pessoa, 35).should((response) => {
+            expect(response.status).to.eq(404);
+            expect(response.body.message).to.eq('ID da pessoa nao encontrada')
+        })
+    });
+
     it('DELETE - Delete pessoa', () => {
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa)).should((response) => {
             expect(response.status).to.eq(200);
+        })
+    });
+
+    it('DELETE - Delete pessoa errado', () => {
+        pessoaService.DELETEpessoaRequest(35).should((response) => {
+            expect(response.status).to.eq(404);
+            expect(response.body.message).to.eq('ID da pessoa nao encontrada')
         })
     });
 
@@ -92,6 +106,13 @@ context('Pessoa', () => {
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
     });
 
+    it('GET - Listar pessoa com relatorio errado', () => {
+        pessoaService.GETpessoaRelatorioRequest(35).should((response) => {
+            expect(response.status).to.eq(200);
+            expect(response.body).that.is.empty;
+        })
+    });
+
     it('GET - Listar pessoa completa', () => {
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
@@ -101,6 +122,13 @@ context('Pessoa', () => {
             expect(response.body).that.is.not.empty;
         })
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
+    });
+
+    it('GET - Listar pessoa completa completa', () => {
+        pessoaService.GETpessoaListaCompletaRequest(35).should((response) => {
+            expect(response.status).to.eq(200);
+            expect(response.body).that.is.empty;
+        })
     });
 
     it('GET - Listar pessoa com endereco', () => {
@@ -114,6 +142,13 @@ context('Pessoa', () => {
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
     });
 
+    it('GET - Listar pessoa com endereco errado', () => {
+        pessoaService.GETpessoaListaEndereco(35).should((response) => {
+            expect(response.status).to.eq(404);
+            expect(response.body.message).to.eq('ID da pessoa nao encontrada')
+        })
+    });
+
     it('GET - Listar pessoa com contato', () => {
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
@@ -123,6 +158,13 @@ context('Pessoa', () => {
             expect(response.body).that.is.not.empty;
         })
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
+    });
+
+    it('GET - Listar pessoa com contato errado', () => {
+        pessoaService.GETpessoaListaContato(35).should((response) => {
+            expect(response.status).to.eq(404);
+            expect(response.body.message).to.eq('ID da pessoa nao encontrada')
+        })
     });
 })
 
@@ -146,11 +188,11 @@ context('Contato', () => {
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
     });
 
-    it.only('POST - Add contato errado', () => {
+    it('POST - Add contato errado', () => {
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
-        cy.get('@pessoa').then(pessoa => pessoaService.POSTcontatoRequest(contatoErrado, pessoa.idPessoa)).should((response) => {
+        cy.get('@pessoa').then(pessoa => pessoaService.POSTcontatoRequest(contatoErrado, 35)).should((response) => {
             expect(response.status).to.eq(400);
             expect(response.body.errors[0]).to.eq('telefone: Numero nao pode ser nulo ou em branco')
         })
@@ -183,6 +225,13 @@ context('Contato', () => {
             expect(response.status).to.eq(200);
         })
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
+    });
+
+    it('DELETE - Deletando contato errado', () => {
+        pessoaService.DELETEcontatoRequest(35).should((response) => {
+            expect(response.status).to.eq(404);
+            expect(response.body.message).to.eq('{idContato} não encontrado')
+        })
     });
 
     it('GET - Listar contato por ID', () => {
@@ -221,7 +270,7 @@ context('Endereco', () => {
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
     });
 
-    it.only('POST - Add endereco', () => {
+    it('POST - Add endereco', () => {
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -257,6 +306,13 @@ context('Endereco', () => {
             expect(response.status).to.eq(200);
         })
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
+    });
+
+    it('DELETE - Deletando endereco errado', () => {
+        pessoaService.DELETEenderecoRequest(35).should((response) => {
+            expect(response.status).to.eq(404);
+            expect(response.body.message).to.eq('{idEndereco} nao encontrado')
+        })
     });
 
     it('GET - Listar endereco por idPessoa', () => {
