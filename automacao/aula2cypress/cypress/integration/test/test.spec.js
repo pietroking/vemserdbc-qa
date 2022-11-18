@@ -84,6 +84,13 @@ context('Pessoa', () => {
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
     });
 
+    it('GET - Listar pessoa por nome erro', () => {
+        pessoaService.GETpessoaByNameRequest('haha').should((response) => {
+            expect(response.status).to.eq(200);
+            expect(response.body).that.is.empty;
+        })
+    });
+
     it('GET - Listar pessoa por CPF', () => {
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
@@ -93,6 +100,12 @@ context('Pessoa', () => {
             expect(response.body).that.is.not.empty;
         })
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
+    });
+
+    it('GET - Listar pessoa por CPF errado', () => {
+        pessoaService.GETpessoaCpfRequest('000').should((response) => {
+            expect(response.status).to.eq(200);
+        })
     });
 
     it('GET - Listar pessoa com relatorio', () => {
@@ -124,7 +137,7 @@ context('Pessoa', () => {
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
     });
 
-    it('GET - Listar pessoa completa completa', () => {
+    it('GET - Listar pessoa completa errada', () => {
         pessoaService.GETpessoaListaCompletaRequest(35).should((response) => {
             expect(response.status).to.eq(200);
             expect(response.body).that.is.empty;
@@ -214,6 +227,13 @@ context('Contato', () => {
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
     });
 
+    it('PUT - Atualizar contato erro', () => {
+        pessoaService.PUTcontatoRequest(contato, 5).should((response) => {
+            expect(response.status).to.eq(404);
+            expect(response.body.message).to.eq('{idContato} não encontrado')
+        })
+    });
+
     it('DELETE - Deletando contato', () => {
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
@@ -248,6 +268,13 @@ context('Contato', () => {
         })
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
     });
+
+    it('GET - Listar contato por ID erro', () => {
+        pessoaService.GETcontatoIdRequest(35).should((response) => {
+            expect(response.status).to.eq(404);
+            expect(response.body.message).to.eq('ID da pessoa nao encontrada')
+        })
+    });
 })
 
 context('Endereco', () => {
@@ -270,7 +297,7 @@ context('Endereco', () => {
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
     });
 
-    it('POST - Add endereco', () => {
+    it('POST - Add endereco erro', () => {
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -308,7 +335,7 @@ context('Endereco', () => {
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
     });
 
-    it('DELETE - Deletando endereco errado', () => {
+    it('DELETE - Deletando endereco erro', () => {
         pessoaService.DELETEenderecoRequest(35).should((response) => {
             expect(response.status).to.eq(404);
             expect(response.body.message).to.eq('{idEndereco} nao encontrado')
@@ -328,6 +355,13 @@ context('Endereco', () => {
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
     });
 
+    it('GET - Listar endereco por idPessoa erro', () => {
+        pessoaService.GETenderecoIdPessoaRequest(35).should((response) => {
+            expect(response.status).to.eq(200);
+            expect(response.body).that.is.empty;
+        })
+    });
+
     it('GET - Listar endereco por ID', () => {
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
@@ -343,10 +377,24 @@ context('Endereco', () => {
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
     });
 
+    it('GET - Listar endereco por ID erro', () => {
+        pessoaService.GETenderecoIdRequest(35).should((response) => {
+            expect(response.status).to.eq(404);
+            expect(response.body.message).to.eq('{idEndereco} nao encontrado')
+        })
+    });
+
     it('GET - Listar endereco por pais', () => {
         pessoaService.GETenderecoPorPaisRequest('Brasil').then((response) => {
             expect(response.status).to.eq(200);
             expect(response.body).that.is.not.empty;
+        })
+    });
+
+    it('GET - Listar endereco por pais erro', () => {
+        pessoaService.GETenderecoPorPaisRequest('hahaha').then((response) => {
+            expect(response.status).to.eq(200);
+            expect(response.body).that.is.empty;
         })
     });
 
