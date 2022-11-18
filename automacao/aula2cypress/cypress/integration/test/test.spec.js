@@ -6,6 +6,12 @@ const pessoa = require('../../fixtures/pessoa.payload.json');
 const contato = require('../../fixtures/contato.payload.json');
 const endereco = require('../../fixtures/endereco.payload.json');
 
+const pessoaErrado = require('../../fixtures/pessoaErrado.payload.json');
+const contatoErrado = require('../../fixtures/contatoErrado.payload.json');
+const enderecoErrado = require('../../fixtures/enderecoErrado.payload.json');
+
+
+
 context('Pessoa', () => {
     it('GET - Listar pessoas', () => {
         pessoaService.GETpessoaRequest(0,20).should((response) => {
@@ -23,6 +29,13 @@ context('Pessoa', () => {
             cy.wrap(response.body).as('pessoa')
         })
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
+    });
+
+    it.only('POST - Add pessoa com erro', () => {
+        pessoaService.POSTpessoaRequest(pessoaErrado).should((response) => {
+            expect(response.status).to.eq(400);
+            expect(response.body.errors[0]).to.eq('nome: must not be blank')
+        })
     });
 
     it('PUT - Atualiza pessoa', () => {
@@ -133,6 +146,17 @@ context('Contato', () => {
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
     });
 
+    it.only('POST - Add contato errado', () => {
+        pessoaService.POSTpessoaRequest(pessoa).then((response) => {
+            cy.wrap(response.body).as('pessoa')
+        })
+        cy.get('@pessoa').then(pessoa => pessoaService.POSTcontatoRequest(contatoErrado, pessoa.idPessoa)).should((response) => {
+            expect(response.status).to.eq(400);
+            expect(response.body.errors[0]).to.eq('telefone: Numero nao pode ser nulo ou em branco')
+        })
+        cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
+    });
+
     it('PUT - Atualizar contato', () => {
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
@@ -193,6 +217,16 @@ context('Endereco', () => {
             expect(response.status).to.eq(200);
             expect(response.body).that.is.not.empty;
             expect(response.body.estado).to.eq('SP')
+        })
+        cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
+    });
+
+    it.only('POST - Add endereco', () => {
+        pessoaService.POSTpessoaRequest(pessoa).then((response) => {
+            cy.wrap(response.body).as('pessoa')
+        })
+        cy.get('@pessoa').then(pessoa => pessoaService.POSTenderecoRequest(enderecoErrado, pessoa.idPessoa)).should((response) => {
+            expect(response.status).to.eq(400);
         })
         cy.get('@pessoa').then(pessoa => pessoaService.DELETEpessoaRequest(pessoa.idPessoa))
     });
