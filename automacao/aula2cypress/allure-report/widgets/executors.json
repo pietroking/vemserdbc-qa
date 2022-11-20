@@ -1,1 +1,7 @@
-[ ]
+[
+    {
+        "name": "Pietro",
+        "buildName":"vemserdbc-cypress-api",
+        "type":"cypress"
+    }
+]

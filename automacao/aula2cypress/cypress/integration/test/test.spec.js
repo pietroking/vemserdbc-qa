@@ -14,6 +14,9 @@ const enderecoErrado = require('../../fixtures/enderecoErrado.payload.json');
 
 context('Pessoa', () => {
     it('GET - Listar pessoas', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('GET Pessoa')
         pessoaService.GETpessoaRequest(0,20).should((response) => {
             expect(response.status).to.eq(200);
             expect(response.body).that.is.not.empty;
@@ -21,6 +24,9 @@ context('Pessoa', () => {
     });
 
     it('POST - Add pessoa', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('POST Pessoa')
         pessoaService.POSTpessoaRequest(pessoa).should((response) => {
             expect(response.status).to.eq(200);
             expect(response.body).that.is.not.empty;
@@ -32,6 +38,9 @@ context('Pessoa', () => {
     });
 
     it('POST - Add pessoa com erro', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('POST Pessoa error')
         pessoaService.POSTpessoaRequest(pessoaErrado).should((response) => {
             expect(response.status).to.eq(400);
             expect(response.body.errors[0]).to.eq('nome: must not be blank')
@@ -39,6 +48,9 @@ context('Pessoa', () => {
     });
 
     it('PUT - Atualiza pessoa', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('PUT Pessoa')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -51,6 +63,9 @@ context('Pessoa', () => {
     });
 
     it('PUT - Atualiza pessoa errado', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('PUT Pessoa error')
        pessoaService.PUTpessoaRequest(pessoa, 35).should((response) => {
             expect(response.status).to.eq(404);
             expect(response.body.message).to.eq('ID da pessoa nao encontrada')
@@ -58,6 +73,9 @@ context('Pessoa', () => {
     });
 
     it('DELETE - Delete pessoa', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('DELETE Pessoa')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -67,6 +85,9 @@ context('Pessoa', () => {
     });
 
     it('DELETE - Delete pessoa errado', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('DELETE Pessoa error')
         pessoaService.DELETEpessoaRequest(35).should((response) => {
             expect(response.status).to.eq(404);
             expect(response.body.message).to.eq('ID da pessoa nao encontrada')
@@ -74,6 +95,9 @@ context('Pessoa', () => {
     });
 
     it('GET - Listar pessoa por nome', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('GET Pessoa por nome')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -85,6 +109,9 @@ context('Pessoa', () => {
     });
 
     it('GET - Listar pessoa por nome erro', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('GET Pessoa por nome error')
         pessoaService.GETpessoaByNameRequest('haha').should((response) => {
             expect(response.status).to.eq(200);
             expect(response.body).that.is.empty;
@@ -92,6 +119,9 @@ context('Pessoa', () => {
     });
 
     it('GET - Listar pessoa por CPF', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('GET Pessoa por cpf')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -103,12 +133,18 @@ context('Pessoa', () => {
     });
 
     it('GET - Listar pessoa por CPF errado', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('GET Pessoa por cpf error')
         pessoaService.GETpessoaCpfRequest('000').should((response) => {
             expect(response.status).to.eq(200);
         })
     });
 
     it('GET - Listar pessoa com relatorio', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('GET Pessoa relatorio')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -120,6 +156,9 @@ context('Pessoa', () => {
     });
 
     it('GET - Listar pessoa com relatorio errado', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('GET Pessoa relatorio error')
         pessoaService.GETpessoaRelatorioRequest(35).should((response) => {
             expect(response.status).to.eq(200);
             expect(response.body).that.is.empty;
@@ -127,6 +166,9 @@ context('Pessoa', () => {
     });
 
     it('GET - Listar pessoa completa', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('GET Pessoa completa')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -138,6 +180,9 @@ context('Pessoa', () => {
     });
 
     it('GET - Listar pessoa completa errada', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('GET Pessoa completa error')
         pessoaService.GETpessoaListaCompletaRequest(35).should((response) => {
             expect(response.status).to.eq(200);
             expect(response.body).that.is.empty;
@@ -145,6 +190,9 @@ context('Pessoa', () => {
     });
 
     it('GET - Listar pessoa com endereco', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('GET Pessoa endereco')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -156,6 +204,9 @@ context('Pessoa', () => {
     });
 
     it('GET - Listar pessoa com endereco errado', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('GET  endereco error')
         pessoaService.GETpessoaListaEndereco(35).should((response) => {
             expect(response.status).to.eq(404);
             expect(response.body.message).to.eq('ID da pessoa nao encontrada')
@@ -163,6 +214,9 @@ context('Pessoa', () => {
     });
 
     it('GET - Listar pessoa com contato', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('GET Pessoa contato')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -174,6 +228,9 @@ context('Pessoa', () => {
     });
 
     it('GET - Listar pessoa com contato errado', () => {
+        cy.allure()
+            .epic('EndPoint Pessoa')
+            .feature('GET Pessoa contato error')
         pessoaService.GETpessoaListaContato(35).should((response) => {
             expect(response.status).to.eq(404);
             expect(response.body.message).to.eq('ID da pessoa nao encontrada')
@@ -183,6 +240,9 @@ context('Pessoa', () => {
 
 context('Contato', () => {
     it('GET - Listar contatos', () => {
+        cy.allure()
+            .epic('EndPoint Contato')
+            .feature('GET Contatos')
         pessoaService.GETcontatoRequest().then((response) => {
             expect(response.status).to.eq(200);
             expect(response.body).that.is.not.empty;
@@ -190,6 +250,9 @@ context('Contato', () => {
     });
 
     it('POST - Add contato', () => {
+        cy.allure()
+            .epic('EndPoint Contato')
+            .feature('POST Contato')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -202,6 +265,9 @@ context('Contato', () => {
     });
 
     it('POST - Add contato errado', () => {
+        cy.allure()
+            .epic('EndPoint Contato')
+            .feature('POST Contato error')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -213,6 +279,9 @@ context('Contato', () => {
     });
 
     it('PUT - Atualizar contato', () => {
+        cy.allure()
+            .epic('EndPoint Contato')
+            .feature('PUT Contato')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -228,6 +297,9 @@ context('Contato', () => {
     });
 
     it('PUT - Atualizar contato erro', () => {
+        cy.allure()
+            .epic('EndPoint Contato')
+            .feature('PUT Contato error')
         pessoaService.PUTcontatoRequest(contato, 5).should((response) => {
             expect(response.status).to.eq(404);
             expect(response.body.message).to.eq('{idContato} não encontrado')
@@ -235,6 +307,9 @@ context('Contato', () => {
     });
 
     it('DELETE - Deletando contato', () => {
+        cy.allure()
+            .epic('EndPoint Contato')
+            .feature('DELETE Contato')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -248,6 +323,9 @@ context('Contato', () => {
     });
 
     it('DELETE - Deletando contato errado', () => {
+        cy.allure()
+            .epic('EndPoint Contato')
+            .feature('DELETE Contato error')
         pessoaService.DELETEcontatoRequest(35).should((response) => {
             expect(response.status).to.eq(404);
             expect(response.body.message).to.eq('{idContato} não encontrado')
@@ -255,6 +333,9 @@ context('Contato', () => {
     });
 
     it('GET - Listar contato por ID', () => {
+        cy.allure()
+            .epic('EndPoint Contato')
+            .feature('GET Contato por ID')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -270,6 +351,9 @@ context('Contato', () => {
     });
 
     it('GET - Listar contato por ID erro', () => {
+        cy.allure()
+            .epic('EndPoint Contato')
+            .feature('GET Contato por ID error')
         pessoaService.GETcontatoIdRequest(35).should((response) => {
             expect(response.status).to.eq(404);
             expect(response.body.message).to.eq('ID da pessoa nao encontrada')
@@ -279,6 +363,9 @@ context('Contato', () => {
 
 context('Endereco', () => {
     it('GET - Listar enderecos', () => {
+        cy.allure()
+            .epic('EndPoint Endereco')
+            .feature('GET Endereco')
         pessoaService.GETenderecoRequest().then((response) => {
             expect(response.status).to.eq(200);
             expect(response.body).that.is.not.empty;
@@ -286,6 +373,9 @@ context('Endereco', () => {
     });
 
     it('POST - Add endereco', () => {
+        cy.allure()
+            .epic('EndPoint Endereco')
+            .feature('POST Endereco')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -298,6 +388,9 @@ context('Endereco', () => {
     });
 
     it('POST - Add endereco erro', () => {
+        cy.allure()
+            .epic('EndPoint Endereco')
+            .feature('POST Endereco error')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -323,6 +416,9 @@ context('Endereco', () => {
     // });
 
     it('DELETE - Deletando endereco', () => {
+        cy.allure()
+            .epic('EndPoint Endereco')
+            .feature('DELETE Endereco')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -336,6 +432,9 @@ context('Endereco', () => {
     });
 
     it('DELETE - Deletando endereco erro', () => {
+        cy.allure()
+            .epic('EndPoint Endereco')
+            .feature('DELETE Endereco error')
         pessoaService.DELETEenderecoRequest(35).should((response) => {
             expect(response.status).to.eq(404);
             expect(response.body.message).to.eq('{idEndereco} nao encontrado')
@@ -343,6 +442,9 @@ context('Endereco', () => {
     });
 
     it('GET - Listar endereco por idPessoa', () => {
+        cy.allure()
+            .epic('EndPoint Endereco')
+            .feature('GET Endereco por IdPessoa')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -356,6 +458,9 @@ context('Endereco', () => {
     });
 
     it('GET - Listar endereco por idPessoa erro', () => {
+        cy.allure()
+            .epic('EndPoint Endereco')
+            .feature('GET Endereco por IdPessoa error')
         pessoaService.GETenderecoIdPessoaRequest(35).should((response) => {
             expect(response.status).to.eq(200);
             expect(response.body).that.is.empty;
@@ -363,6 +468,9 @@ context('Endereco', () => {
     });
 
     it('GET - Listar endereco por ID', () => {
+        cy.allure()
+            .epic('EndPoint Endereco')
+            .feature('GET Endereco por idEndereco')
         pessoaService.POSTpessoaRequest(pessoa).then((response) => {
             cy.wrap(response.body).as('pessoa')
         })
@@ -378,6 +486,9 @@ context('Endereco', () => {
     });
 
     it('GET - Listar endereco por ID erro', () => {
+        cy.allure()
+            .epic('EndPoint Endereco')
+            .feature('GET Endereco por idEndereco error')
         pessoaService.GETenderecoIdRequest(35).should((response) => {
             expect(response.status).to.eq(404);
             expect(response.body.message).to.eq('{idEndereco} nao encontrado')
@@ -385,6 +496,9 @@ context('Endereco', () => {
     });
 
     it('GET - Listar endereco por pais', () => {
+        cy.allure()
+            .epic('EndPoint Endereco')
+            .feature('GET Endereco por pais')
         pessoaService.GETenderecoPorPaisRequest('Brasil').then((response) => {
             expect(response.status).to.eq(200);
             expect(response.body).that.is.not.empty;
@@ -392,6 +506,9 @@ context('Endereco', () => {
     });
 
     it('GET - Listar endereco por pais erro', () => {
+        cy.allure()
+            .epic('EndPoint Endereco')
+            .feature('GET Endereco por pais error')
         pessoaService.GETenderecoPorPaisRequest('hahaha').then((response) => {
             expect(response.status).to.eq(200);
             expect(response.body).that.is.empty;

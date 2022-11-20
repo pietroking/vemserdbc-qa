@@ -1,0 +1,109 @@
+{
+  "uid" : "5731b097d27d513c",
+  "name" : "Contrato - Validar contrato GET endereco por idPessoa",
+  "fullName" : "Contrato - Validar contrato GET endereco por idPessoa",
+  "historyId" : "4f29e0ec717d57e41bb4a26b7bcaa6a2",
+  "time" : {
+    "start" : 1668969583980,
+    "stop" : 1668969584057,
+    "duration" : 77
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/dbc-pessoa-api/endereco/retorna-por-id-pessoa",
+      "time" : {
+        "start" : 1668969583988,
+        "stop" : 1668969584048,
+        "duration" : 60
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1668969584048,
+        "stop" : 1668969584048,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1668969584048,
+        "stop" : 1668969584050,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "fixture (\"enderecoPorId.contrato\")",
+      "time" : {
+        "start" : 1668969584050,
+        "stop" : 1668969584054,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contrato Endereco"
+  }, {
+    "name" : "epic",
+    "value" : "Contratos"
+  }, {
+    "name" : "feature",
+    "value" : "GET Endereco por IdPessoa"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5731b097d27d513c.json",
+  "parameterValues" : [ ]
+}

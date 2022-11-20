@@ -1,15 +1,48 @@
 {
-  "total" : 46,
+  "total" : 4,
   "items" : [ {
-    "uid" : "973a763f82b2f942c73672a22f1b42a9",
-    "name" : "Validar contratos",
+    "uid" : "56c56c63fe69221b8f563327fcd897d9",
+    "name" : "EndPoint Pessoa",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 19,
       "unknown" : 0,
-      "total" : 1
+      "total" : 19
+    }
+  }, {
+    "uid" : "f5d3b1a3c2165803e5468426126f2238",
+    "name" : "Contratos",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 12,
+      "unknown" : 0,
+      "total" : 12
+    }
+  }, {
+    "uid" : "c1ac818be4ce779d90dbc7486b8c5ebd",
+    "name" : "EndPoint Endereco",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 11,
+      "unknown" : 0,
+      "total" : 11
+    }
+  }, {
+    "uid" : "e33f6447c4f79cfd5ffdf10ca7b84acc",
+    "name" : "EndPoint Contato",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 9
     }
   } ]
 }

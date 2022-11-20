@@ -1,81 +1,82 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
   "children" : [ {
     "name" : "Contrato Pessoas",
     "children" : [ {
       "name" : "Contrato - Validar contrato GET pessoas",
-      "uid" : "f2ee7aa08ba2f9ba",
+      "uid" : "e9d60f79bb1a4f95",
       "parentUid" : "57e3ed00df2e0eff2c7257b219b0050b",
       "status" : "passed",
       "time" : {
-        "start" : 1668800821430,
-        "stop" : 1668800821520,
-        "duration" : 90
+        "start" : 1668969641676,
+        "stop" : 1668969641777,
+        "duration" : 101
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Contrato - Validar contrato GET relatorio",
-      "uid" : "e994b62fbe6dc43",
+      "uid" : "705ab35be2629f6d",
       "parentUid" : "57e3ed00df2e0eff2c7257b219b0050b",
       "status" : "passed",
       "time" : {
-        "start" : 1668800821522,
-        "stop" : 1668800821617,
-        "duration" : 95
+        "start" : 1668969641781,
+        "stop" : 1668969641884,
+        "duration" : 103
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Contrato - Validar contrato GET by name",
-      "uid" : "3a22d3db62bae831",
+      "uid" : "91246cf702a5eb8c",
       "parentUid" : "57e3ed00df2e0eff2c7257b219b0050b",
       "status" : "passed",
       "time" : {
-        "start" : 1668800821621,
-        "stop" : 1668800821682,
-        "duration" : 61
+        "start" : 1668969641888,
+        "stop" : 1668969641965,
+        "duration" : 77
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Contrato - Validar contrato GET pessoa contato",
-      "uid" : "95d2367e9fbd1549",
+      "uid" : "909c424b687c64ef",
       "parentUid" : "57e3ed00df2e0eff2c7257b219b0050b",
       "status" : "passed",
       "time" : {
-        "start" : 1668800821684,
-        "stop" : 1668800821749,
-        "duration" : 65
+        "start" : 1668969641968,
+        "stop" : 1668969642043,
+        "duration" : 75
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Contrato - Validar contrato GET pessoa endereco",
-      "uid" : "1d7ac8c96bbfc8c9",
+      "uid" : "4faf11151d333d1b",
       "parentUid" : "57e3ed00df2e0eff2c7257b219b0050b",
       "status" : "passed",
       "time" : {
-        "start" : 1668800821752,
-        "stop" : 1668800821819,
-        "duration" : 67
+        "start" : 1668969642045,
+        "stop" : 1668969642128,
+        "duration" : 83
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Contrato - Validar contrato GET pessoa completa",
-      "uid" : "6b7568bd9da7d6e",
+      "uid" : "c8ca32f241ca63f5",
       "parentUid" : "57e3ed00df2e0eff2c7257b219b0050b",
       "status" : "passed",
       "time" : {
-        "start" : 1668800821822,
-        "stop" : 1668800821899,
-        "duration" : 77
+        "start" : 1668969642132,
+        "stop" : 1668969642214,
+        "duration" : 82
       },
       "flaky" : false,
       "newFailed" : false,
@@ -86,26 +87,26 @@
     "name" : "Contrato Contato",
     "children" : [ {
       "name" : "Contrato - Validar contrato GET contato",
-      "uid" : "d55dc009bccb2a10",
+      "uid" : "43e92ae00f4fa9e1",
       "parentUid" : "bba85823d4b6014fc60f7ce0c1fc2e65",
       "status" : "passed",
       "time" : {
-        "start" : 1668800821902,
-        "stop" : 1668800821967,
-        "duration" : 65
+        "start" : 1668969642217,
+        "stop" : 1668969642292,
+        "duration" : 75
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Contrato - Validar contrato GET contato por id",
-      "uid" : "b3b1a61692534de3",
+      "uid" : "169bb294fb252de",
       "parentUid" : "bba85823d4b6014fc60f7ce0c1fc2e65",
       "status" : "passed",
       "time" : {
-        "start" : 1668800821970,
-        "stop" : 1668800822033,
-        "duration" : 63
+        "start" : 1668969642294,
+        "stop" : 1668969642370,
+        "duration" : 76
       },
       "flaky" : false,
       "newFailed" : false,
@@ -116,52 +117,52 @@
     "name" : "Contrato Endereco",
     "children" : [ {
       "name" : "Contrato - Validar contrato GET endereco",
-      "uid" : "9171fb73348324a7",
+      "uid" : "3339aa27c004e352",
       "parentUid" : "83d7f12abf0118268a997f739783b662",
       "status" : "passed",
       "time" : {
-        "start" : 1668800822036,
-        "stop" : 1668800822126,
-        "duration" : 90
+        "start" : 1668969642373,
+        "stop" : 1668969642466,
+        "duration" : 93
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Contrato - Validar contrato GET endereco por idEndereco",
-      "uid" : "1c3a3ef859677c1c",
+      "uid" : "91c87aef69a2b762",
       "parentUid" : "83d7f12abf0118268a997f739783b662",
       "status" : "passed",
       "time" : {
-        "start" : 1668800822128,
-        "stop" : 1668800822193,
-        "duration" : 65
+        "start" : 1668969642468,
+        "stop" : 1668969642542,
+        "duration" : 74
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Contrato - Validar contrato GET endereco por idPessoa",
-      "uid" : "a659a5981beb0fc2",
+      "uid" : "f72cdc2fb30a1150",
       "parentUid" : "83d7f12abf0118268a997f739783b662",
       "status" : "passed",
       "time" : {
-        "start" : 1668800822195,
-        "stop" : 1668800822255,
-        "duration" : 60
+        "start" : 1668969642546,
+        "stop" : 1668969642622,
+        "duration" : 76
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Contrato - Validar contrato GET endereco por pais",
-      "uid" : "9c1a627c20c9a8dd",
+      "uid" : "fcaed6f315cc239c",
       "parentUid" : "83d7f12abf0118268a997f739783b662",
       "status" : "passed",
       "time" : {
-        "start" : 1668800822257,
-        "stop" : 1668800822373,
-        "duration" : 116
+        "start" : 1668969642625,
+        "stop" : 1668969642756,
+        "duration" : 131
       },
       "flaky" : false,
       "newFailed" : false,
@@ -172,247 +173,247 @@
     "name" : "Pessoa",
     "children" : [ {
       "name" : "GET - Listar pessoas",
-      "uid" : "919b809b321ee318",
+      "uid" : "57d239bf05d5562e",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800823807,
-        "stop" : 1668800823867,
-        "duration" : 60
+        "start" : 1668969644179,
+        "stop" : 1668969644253,
+        "duration" : 74
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "POST - Add pessoa",
-      "uid" : "ccf28d7c1a5ec4ac",
+      "uid" : "9100e40ed83cde8c",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800823871,
-        "stop" : 1668800823995,
-        "duration" : 124
+        "start" : 1668969644256,
+        "stop" : 1668969644512,
+        "duration" : 256
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "POST - Add pessoa com erro",
-      "uid" : "66fe16ddaf7ebca2",
+      "uid" : "538214bfa0579366",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800823998,
-        "stop" : 1668800824052,
-        "duration" : 54
+        "start" : 1668969644515,
+        "stop" : 1668969644602,
+        "duration" : 87
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "PUT - Atualiza pessoa",
-      "uid" : "5aea0110e2b05125",
+      "uid" : "9d7dc6a0cf4590f9",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800824054,
-        "stop" : 1668800824239,
-        "duration" : 185
+        "start" : 1668969644605,
+        "stop" : 1668969644818,
+        "duration" : 213
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "PUT - Atualiza pessoa errado",
-      "uid" : "dac485e4e38da8a0",
+      "uid" : "304f5ce3b79390d0",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800824242,
-        "stop" : 1668800824308,
-        "duration" : 66
+        "start" : 1668969644820,
+        "stop" : 1668969644897,
+        "duration" : 77
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "DELETE - Delete pessoa",
-      "uid" : "e1c0aeedeb861d99",
+      "uid" : "489041c0dc167786",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800824310,
-        "stop" : 1668800824428,
-        "duration" : 118
+        "start" : 1668969644900,
+        "stop" : 1668969645044,
+        "duration" : 144
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "DELETE - Delete pessoa errado",
-      "uid" : "459bcb55c4210a49",
+      "uid" : "2d1b1ead1c9c9ef",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800824431,
-        "stop" : 1668800824489,
-        "duration" : 58
+        "start" : 1668969645046,
+        "stop" : 1668969645122,
+        "duration" : 76
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar pessoa por nome",
-      "uid" : "b359eb50985b4a75",
+      "uid" : "345eb759a1f4787d",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800824491,
-        "stop" : 1668800824675,
-        "duration" : 184
+        "start" : 1668969645124,
+        "stop" : 1668969645345,
+        "duration" : 221
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar pessoa por nome erro",
-      "uid" : "462bc26f86eb06f3",
+      "uid" : "5a3889ecbecf6991",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800824677,
-        "stop" : 1668800824741,
-        "duration" : 64
+        "start" : 1668969645348,
+        "stop" : 1668969645427,
+        "duration" : 79
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar pessoa por CPF",
-      "uid" : "dceaa939dc9a55e4",
+      "uid" : "22951231a487be6b",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800824743,
-        "stop" : 1668800824929,
-        "duration" : 186
+        "start" : 1668969645429,
+        "stop" : 1668969645643,
+        "duration" : 214
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar pessoa por CPF errado",
-      "uid" : "60dc750498dba431",
+      "uid" : "a129ffef70e6a838",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800824932,
-        "stop" : 1668800824996,
-        "duration" : 64
+        "start" : 1668969645646,
+        "stop" : 1668969645716,
+        "duration" : 70
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar pessoa com relatorio",
-      "uid" : "dd8a9002b51087e",
+      "uid" : "6c03a2cb0cdd235e",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800824999,
-        "stop" : 1668800825211,
-        "duration" : 212
+        "start" : 1668969645718,
+        "stop" : 1668969645964,
+        "duration" : 246
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar pessoa com relatorio errado",
-      "uid" : "2e7f442274ef0aaf",
+      "uid" : "680755e17ddba6ca",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800825214,
-        "stop" : 1668800825270,
-        "duration" : 56
+        "start" : 1668969645967,
+        "stop" : 1668969646045,
+        "duration" : 78
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar pessoa completa",
-      "uid" : "2f19ec108ad10ae9",
+      "uid" : "17fdd40662b5b253",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800825273,
-        "stop" : 1668800825461,
-        "duration" : 188
+        "start" : 1668969646048,
+        "stop" : 1668969646259,
+        "duration" : 211
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar pessoa completa errada",
-      "uid" : "4049c71a9a492fe5",
+      "uid" : "4af472b8ef0c9c67",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800825464,
-        "stop" : 1668800825524,
-        "duration" : 60
+        "start" : 1668969646262,
+        "stop" : 1668969646334,
+        "duration" : 72
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar pessoa com endereco",
-      "uid" : "471655b20e4ba84b",
+      "uid" : "fe935c63a89e7ef3",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800825528,
-        "stop" : 1668800825710,
-        "duration" : 182
+        "start" : 1668969646337,
+        "stop" : 1668969646558,
+        "duration" : 221
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar pessoa com endereco errado",
-      "uid" : "2b68cd5daad4f297",
+      "uid" : "432353fe923cfc3a",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800825712,
-        "stop" : 1668800825775,
-        "duration" : 63
+        "start" : 1668969646560,
+        "stop" : 1668969646640,
+        "duration" : 80
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar pessoa com contato",
-      "uid" : "1ecc2f7f73e2b0de",
+      "uid" : "e791e37ea39b96ca",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800825777,
-        "stop" : 1668800825954,
-        "duration" : 177
+        "start" : 1668969646642,
+        "stop" : 1668969646853,
+        "duration" : 211
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar pessoa com contato errado",
-      "uid" : "34be0797cebe2081",
+      "uid" : "488ee00dead78ad1",
       "parentUid" : "0204f8d97da14a8025be491e943f2ab0",
       "status" : "passed",
       "time" : {
-        "start" : 1668800825957,
-        "stop" : 1668800826016,
-        "duration" : 59
+        "start" : 1668969646856,
+        "stop" : 1668969646935,
+        "duration" : 79
       },
       "flaky" : false,
       "newFailed" : false,
@@ -423,117 +424,117 @@
     "name" : "Contato",
     "children" : [ {
       "name" : "GET - Listar contatos",
-      "uid" : "34763dff5a828802",
+      "uid" : "7a0b3ab03745c270",
       "parentUid" : "b46e323bdadaab1ddd699fd3b7c32263",
       "status" : "passed",
       "time" : {
-        "start" : 1668800826019,
-        "stop" : 1668800826077,
-        "duration" : 58
+        "start" : 1668969646939,
+        "stop" : 1668969647017,
+        "duration" : 78
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "POST - Add contato",
-      "uid" : "436155aaeb423b40",
+      "uid" : "5bcbf45e37657d79",
       "parentUid" : "b46e323bdadaab1ddd699fd3b7c32263",
       "status" : "passed",
       "time" : {
-        "start" : 1668800826080,
-        "stop" : 1668800826258,
-        "duration" : 178
+        "start" : 1668969647019,
+        "stop" : 1668969647233,
+        "duration" : 214
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "POST - Add contato errado",
-      "uid" : "4b9310301b7196e4",
+      "uid" : "6414bb2b7d91818e",
       "parentUid" : "b46e323bdadaab1ddd699fd3b7c32263",
       "status" : "passed",
       "time" : {
-        "start" : 1668800826261,
-        "stop" : 1668800826431,
-        "duration" : 170
+        "start" : 1668969647236,
+        "stop" : 1668969647441,
+        "duration" : 205
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "PUT - Atualizar contato",
-      "uid" : "8d386e279f8b6fc2",
+      "uid" : "a6e7372fbd28af3",
       "parentUid" : "b46e323bdadaab1ddd699fd3b7c32263",
       "status" : "passed",
       "time" : {
-        "start" : 1668800826433,
-        "stop" : 1668800826736,
-        "duration" : 303
+        "start" : 1668969647443,
+        "stop" : 1668969647730,
+        "duration" : 287
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "PUT - Atualizar contato erro",
-      "uid" : "669f8876e43dd9ae",
+      "uid" : "2b332aa7263810ec",
       "parentUid" : "b46e323bdadaab1ddd699fd3b7c32263",
       "status" : "passed",
       "time" : {
-        "start" : 1668800826738,
-        "stop" : 1668800826803,
-        "duration" : 65
+        "start" : 1668969647733,
+        "stop" : 1668969647804,
+        "duration" : 71
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "DELETE - Deletando contato",
-      "uid" : "7b4f04ba6bc1886d",
+      "uid" : "a2f41add722f0881",
       "parentUid" : "b46e323bdadaab1ddd699fd3b7c32263",
       "status" : "passed",
       "time" : {
-        "start" : 1668800826807,
-        "stop" : 1668800827051,
-        "duration" : 244
+        "start" : 1668969647807,
+        "stop" : 1668969648089,
+        "duration" : 282
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "DELETE - Deletando contato errado",
-      "uid" : "3475b4a2b2b8666c",
+      "uid" : "b7ebe0f23a515b14",
       "parentUid" : "b46e323bdadaab1ddd699fd3b7c32263",
       "status" : "passed",
       "time" : {
-        "start" : 1668800827053,
-        "stop" : 1668800827113,
-        "duration" : 60
+        "start" : 1668969648092,
+        "stop" : 1668969648159,
+        "duration" : 67
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar contato por ID",
-      "uid" : "ce43851fad0b4818",
+      "uid" : "a5ba1620611b9849",
       "parentUid" : "b46e323bdadaab1ddd699fd3b7c32263",
       "status" : "passed",
       "time" : {
-        "start" : 1668800827115,
-        "stop" : 1668800827361,
-        "duration" : 246
+        "start" : 1668969648161,
+        "stop" : 1668969648443,
+        "duration" : 282
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar contato por ID erro",
-      "uid" : "69bb2d6b998c2e1d",
+      "uid" : "ded1d7010dac2ba4",
       "parentUid" : "b46e323bdadaab1ddd699fd3b7c32263",
       "status" : "passed",
       "time" : {
-        "start" : 1668800827364,
-        "stop" : 1668800827421,
-        "duration" : 57
+        "start" : 1668969648445,
+        "stop" : 1668969648517,
+        "duration" : 72
       },
       "flaky" : false,
       "newFailed" : false,
@@ -544,149 +545,148 @@
     "name" : "Endereco",
     "children" : [ {
       "name" : "GET - Listar enderecos",
-      "uid" : "c8d5fb4b5bbcd3d3",
+      "uid" : "887ac3188c727e3",
       "parentUid" : "10df452bcaa4f0ffdf3102a1adac9569",
       "status" : "passed",
       "time" : {
-        "start" : 1668800827423,
-        "stop" : 1668800827505,
-        "duration" : 82
+        "start" : 1668969648520,
+        "stop" : 1668969648613,
+        "duration" : 93
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "POST - Add endereco",
-      "uid" : "709d602627465919",
+      "uid" : "6046960cfccaa10e",
       "parentUid" : "10df452bcaa4f0ffdf3102a1adac9569",
       "status" : "passed",
       "time" : {
-        "start" : 1668800827508,
-        "stop" : 1668800827779,
-        "duration" : 271
+        "start" : 1668969648616,
+        "stop" : 1668969648842,
+        "duration" : 226
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "POST - Add endereco erro",
-      "uid" : "4ed9b982a902a994",
+      "uid" : "7d6a1c22a23acd8b",
       "parentUid" : "10df452bcaa4f0ffdf3102a1adac9569",
       "status" : "passed",
       "time" : {
-        "start" : 1668800827782,
-        "stop" : 1668800827977,
-        "duration" : 195
+        "start" : 1668969648844,
+        "stop" : 1668969649057,
+        "duration" : 213
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "DELETE - Deletando endereco",
-      "uid" : "27e69bd3f1071258",
+      "uid" : "5a32922a938eb1b9",
       "parentUid" : "10df452bcaa4f0ffdf3102a1adac9569",
       "status" : "passed",
       "time" : {
-        "start" : 1668800827980,
-        "stop" : 1668800828235,
-        "duration" : 255
+        "start" : 1668969649058,
+        "stop" : 1668969649344,
+        "duration" : 286
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "DELETE - Deletando endereco erro",
-      "uid" : "96faaa98e820425f",
+      "uid" : "648e8c5d2588c121",
       "parentUid" : "10df452bcaa4f0ffdf3102a1adac9569",
       "status" : "passed",
       "time" : {
-        "start" : 1668800828237,
-        "stop" : 1668800828296,
-        "duration" : 59
+        "start" : 1668969649346,
+        "stop" : 1668969649413,
+        "duration" : 67
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar endereco por idPessoa",
-      "uid" : "1e020803443e5b7a",
+      "uid" : "488520da6c22df04",
       "parentUid" : "10df452bcaa4f0ffdf3102a1adac9569",
       "status" : "passed",
       "time" : {
-        "start" : 1668800828298,
-        "stop" : 1668800828543,
-        "duration" : 245
+        "start" : 1668969649415,
+        "stop" : 1668969649692,
+        "duration" : 277
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar endereco por idPessoa erro",
-      "uid" : "84907830edeab16b",
+      "uid" : "c7f86eb495662288",
       "parentUid" : "10df452bcaa4f0ffdf3102a1adac9569",
       "status" : "passed",
       "time" : {
-        "start" : 1668800828546,
-        "stop" : 1668800828610,
-        "duration" : 64
+        "start" : 1668969649695,
+        "stop" : 1668969649771,
+        "duration" : 76
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar endereco por ID",
-      "uid" : "39c3484e97c39920",
+      "uid" : "fd615246d83b94dc",
       "parentUid" : "10df452bcaa4f0ffdf3102a1adac9569",
       "status" : "passed",
       "time" : {
-        "start" : 1668800828612,
-        "stop" : 1668800828861,
-        "duration" : 249
+        "start" : 1668969649773,
+        "stop" : 1668969650076,
+        "duration" : 303
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar endereco por ID erro",
-      "uid" : "2b48426351dedec",
+      "uid" : "207d48574638eb89",
       "parentUid" : "10df452bcaa4f0ffdf3102a1adac9569",
       "status" : "passed",
       "time" : {
-        "start" : 1668800828864,
-        "stop" : 1668800828929,
-        "duration" : 65
+        "start" : 1668969650079,
+        "stop" : 1668969650147,
+        "duration" : 68
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar endereco por pais",
-      "uid" : "7cc715bba9ec2607",
+      "uid" : "e7f3c19241d56f97",
       "parentUid" : "10df452bcaa4f0ffdf3102a1adac9569",
       "status" : "passed",
       "time" : {
-        "start" : 1668800828932,
-        "stop" : 1668800829047,
-        "duration" : 115
+        "start" : 1668969650150,
+        "stop" : 1668969650274,
+        "duration" : 124
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "GET - Listar endereco por pais erro",
-      "uid" : "28b516ddc65ea296",
+      "uid" : "2a65607515622d8f",
       "parentUid" : "10df452bcaa4f0ffdf3102a1adac9569",
       "status" : "passed",
       "time" : {
-        "start" : 1668800829049,
-        "stop" : 1668800829108,
-        "duration" : 59
+        "start" : 1668969650277,
+        "stop" : 1668969650352,
+        "duration" : 75
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     } ],
     "uid" : "10df452bcaa4f0ffdf3102a1adac9569"
-  } ],
-  "name" : "suites"
+  } ]
 }
